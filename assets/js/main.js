@@ -18,9 +18,11 @@ function myFunction() {
           navbar.classList.remove("fixed-top");
      }
 }
+
+// Aos animation 
 AOS.init({
      duration: 1200,
-   })
+})
 
 
 
@@ -63,6 +65,8 @@ window.addEventListener('scroll', () => {
      
      sections.forEach(section => {
           const sectionTop = section.offsetTop;
+console.log(sectionTop)
+
           if(pageYOffset >= (sectionTop-(heightHeader+heightHeaderNavFix))){
                current = section.getAttribute('id');
           }

@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 :root{
-   --primary-color: rgba(42, 44, 57, 0.9);
-   --foreign-color: #e9ac06;
+   --primary-color: #F4A850;
+   --foreign-color: #05ABE0;
 }
 * {
    padding: 0;
@@ -19,13 +20,17 @@ html {
    
 }
 ::-webkit-scrollbar-thumb {
-   background: linear-gradient(rgb(255, 255, 253),var(--primary-color));
+   background: linear-gradient(rgb(255, 255, 253),var(--foreign-color));
    border-radius: 6px;
 }
 
 /* Dùng chung  */
 .lora-font{
    font-family: 'Lora';
+}
+
+.f-color{
+   color: var(--foreign-color);
 }
 
  /* Loading  */
@@ -48,11 +53,6 @@ html {
    zoom: 1.2;
 }
 
-.header__introduce-time i, 
-.header__introduce-call i {
-   color: #01B3AF;
-}
-
 .header__introduce-time p,
 .header__introduce-call a {
    color: #56567C;
@@ -63,15 +63,15 @@ html {
    color: #5FC3BC;
 }
 .header__navbar {
-   background-color: var(--primary-color);
+   background-color: var(--foreign-color);
    /* border-top: 6px solid #FED152; */
    width: 100%;
-   border-top: 2px solid var(--foreign-color);
+   border-top: 2px solid var(--primary-color);
 }
 
 .wrap-header {
    max-width: 100%;
-   width: 1200px;
+   width: 1400px;
 }
 .navbar .nav-item .nav-link{
    text-transform: uppercase;
@@ -120,26 +120,39 @@ html {
    border-radius: 40px;
 }
 .active{
-   background-color: var(--foreign-color);
+   background-color: var(--primary-color);
 }
 
 /* ----- Slider  */
-.home-slider {
 
-   width:100%;
-   background-color:#fff;
-}
 .home-slider.owl-carousel{
    z-index: 1;
    position: relative;
 }
 .home-slider.owl-carousel .slider-item{
+   background-color: var(--foreign-color);
+   min-height: 50vh;
+   position: relative;
+}
+.home-slider.owl-carousel .slider-img {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   height: calc(100vh - 148px);
-   position: relative;
+   height: 40vh;
+   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+   border-radius:20px;
 }
+
+@keyframes up-down {
+   0% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(-10px);
+   }
+}
+
+
 .home-slider.owl-carousel .owl-nav {
    display:none;
 }
@@ -156,7 +169,7 @@ html {
    background: rgba(42, 44, 57, 0.5);
 }
 .home-slider.owl-carousel .owl-dots .owl-dot.active{
-   background: var(--foreign-color);
+   background: var(--primary-color);
    border:2px solid rgba(255, 255, 255,0.9);
 }
 
@@ -170,7 +183,7 @@ html {
    bottom:12px;
    width: 100%;
 }
-/*  */
+/* Section */
 #about,
 #service,
 #news,
@@ -183,7 +196,7 @@ html {
    padding: 100px 0;
 }
 #about{
-   background-color: green;
+   background-color: #FFF;
 }
 #service{
    background-color: yellow;
@@ -195,7 +208,21 @@ html {
    background-color: purple;
 }
 
-.title {
-   transform: translateZ(0) scale(1);
+/* ----- About section ----- */
+
+.about-title h2{
+   font-family: 'Festive';
+   font-size: 40px;
+   color: var(--primary-color);
+}
+.about-title p{
+   font-size: 50px;
+}
+
+.about-description li i {
+   color: var(--primary-color);
+}
+.about-description p{
+   text-align: justify;
 }
 
