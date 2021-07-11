@@ -19,6 +19,36 @@ function myFunction() {
      }
 }
 
+// Navbar mobile
+
+     // var header = document.getElementById('header');
+     // var mobileMenu = document.getElementById('mobile-menu');
+
+     //     // Đóng/Mở mobile menu
+     // mobileMenu.onclick = function () {
+     //      var isClose = header.clientHeight === 46
+     //      if (isClose) {
+     //           header.style.height = 'auto';
+     //      } else {
+     //           header.style.height = null;
+     //      }
+     // }
+
+     //     // Auto đóng
+     // var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+     // for (var i = 0; i < menuItems.length; i++) {
+     //      var menuItem = menuItems[i];
+
+     //      menuItem.onclick = function (event) {
+     //           var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+     //           if (isParentMenu) {
+     //              // Bỏ qua mặc định trở về đầu trang
+     //           event.preventDefault();
+     //           } else {
+     //           header.style.height = null;
+     //           }
+     //      }
+     // }
 // Aos animation 
 AOS.init({
      duration: 1200,
@@ -68,12 +98,11 @@ AOS.init({
 
 // Highlight scroll to section
 const sections=document.querySelectorAll('section');
-const navLi = document.querySelectorAll('nav .container ul li a');
+const navLi = document.querySelectorAll('nav #header__navbar-list ul li a');
 
 const heightHeader = $('#home').outerHeight();
 const heightHeaderNavFix = $('.header__navbar').outerHeight();
-console.log(heightHeader)
-console.log(heightHeaderNavFix)
+
 window.addEventListener('scroll', () => {
      let current = '';
      
@@ -86,16 +115,11 @@ console.log(sectionTop)
           }
      })
      navLi.forEach(li => {
-          li.classList.remove('active');
+          li.classList.remove('nav-active');
           if(li.classList.contains(current)){
-               li.classList.add('active');
+               li.classList.add('nav-active');
           }               
      })
-     // navLi.forEach(li =>{
-     //      if(li.classList.contains('active')){
-     //           $('.home').removeClass('active');
-     //      } else {
-     //           $('.home').addClass('active');
-     //      }
-     // })
 })
+
+

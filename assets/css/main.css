@@ -73,9 +73,9 @@ html {
 
 .wrap-header {
    max-width: 100%;
-   width: 1400px;
+   width: 1200px;
 }
-.navbar .nav-item .nav-link{
+.header__navbar-link{
    text-transform: uppercase;
    height:40px;
    color: #fff;
@@ -86,89 +86,23 @@ html {
 .header__navbar.fixed-top{
    background-color: #fff !important;
 }
-.header__navbar.fixed-top .nav-item .nav-link {
+.header__navbar.fixed-top .header__navbar-link {
    color: #000 !important;
    text-shadow: 0 0 1px var(--primary-color);
 }
-
-/* .navbar .navbar-nav .nav-item{
-   height:42px;
-} */
-
-.header__navbar-list .nav-item a{
+.header__navbar-item a{
    font-size: 14px;
 }
-.nav-item .nav-link-icon {
+.header__navbar-link-icon {
    border:1px solid #FED152;
 }
 
-.header__navbar-list-item li a{
+.header__navbar-list li a{
    border-radius: 40px;
 }
-.active{
+.nav-active{
    background-color: var(--primary-color);
 }
-
-/* ----- Slider  */
-
-/* .home-slider.owl-carousel{
-   z-index: 1;
-   position: relative;
-}
-.home-slider.owl-carousel .slider-item{
-   background-color: var(--foreign-color);
-   min-height: 50vh;
-   position: relative;
-}
-.home-slider.owl-carousel .slider-img {
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   height: 40vh;
-   animation: up-down 2s ease-in-out infinite alternate-reverse both;
-   border-radius:20px;
-}
-
-@keyframes up-down {
-   0% {
-      transform: translateY(10px);
-   }
-   100% {
-      transform: translateY(-10px);
-   }
-}
-
-
-.home-slider.owl-carousel .owl-nav {
-   display:none;
-}
-.home-slider.owl-carousel .owl-dots {
-   text-align: center;
-   justify-content: center;
-   display: flex;
-}
-.home-slider.owl-carousel .owl-dots .owl-dot{
-   width: 12px;
-   height: 12px;
-   margin: 8px;
-   border-radius: 50%;
-   background: rgba(42, 44, 57, 0.5);
-}
-.home-slider.owl-carousel .owl-dots .owl-dot.active{
-   background: var(--primary-color);
-   border:2px solid rgba(255, 255, 255,0.9);
-} */
-
-/* .owl-carousel.home-slider .owl-nav{
-   opacity: 0;
-   visibility: hidden;
-} */
-
-/* .home-slider.owl-carousel .owl-dots{
-   position: absolute;
-   bottom:12px;
-   width: 100%;
-} */
 
 /* ----- Carousel Slider ----- */
 .carousel-indicators button {
@@ -176,6 +110,11 @@ html {
 }
 .carousel-inner .carousel-img {
    max-height: calc(100vh - 150px);
+   min-height: 40vh;
+}
+
+.carousel-item {
+   background-color: var(--foreign-color);
 }
 .carousel-item h5 {
    position:absolute;

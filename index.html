@@ -24,7 +24,6 @@
    <link rel="stylesheet" href="./assets/animate/animate.min.css">
    <link rel="stylesheet" href="./assets/aos/aos.css">
    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-   <!-- <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"> -->
 
    <!-- Font Awesome -->
    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
@@ -74,59 +73,49 @@
    </header>
    <!-- Navbar  -->
    <nav id="header__navbar-fixed" class=" header__navbar shadow-lg ">
-      <div class=" container-fluid wrap-header ">
+      <div class=" container-fluid wrap-header d-flex">
          <!-- // -->
-         <nav class=" navbar navbar-expand-md p-0 ">
-            <div class=" container">
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <i class="fas fa-bars" style="color: #fff; font-size:32px;"></i>
-               </button>
+         <!-- - Danh mục -->
+         <ul id="header__navbar-list" class="header__navbar-list-item list-unstyled d-flex mb-lg-0 ">
+            <li class=" header__navbar-item m-2 p-1 ">
+               <a class="home header__navbar-link  pe-4 ps-4 fw-bold nav-active " href="#home">Trang Chủ</a>
+            </li>
+            <li class=" header__navbar-item m-2 p-1  ">
+               <a class="about header__navbar-link  pe-4 ps-4 fw-bold  " href="#about">Giới Thiệu</a>
+            </li>
+            <li class=" header__navbar-item m-2 p-1 ">
+               <a class="service header__navbar-link  pe-4 ps-4 fw-bold  " href="#service">Dịch Vụ</a>
+            </li>
+            <li class=" header__navbar-item m-2 p-1 ">
+               <a class="news header__navbar-link  pe-4 ps-4 fw-bold   " href="#news">Tin Tức</a>
+            </li>
+            <li class=" header__navbar-item m-2 p-1 ">
+               <a class="contact header__navbar-link  pe-4 ps-4 fw-bold  " href="#contact">Liên Hệ</a>
+            </li>
+         </ul>
+         <!-- - Flat -->
+         <div class="header__navbar-flat d-none d-sm-block me-4">
 
-               <div class="header__navbar-list collapse navbar-collapse flex-md-grow-0" id="navbarSupportedContent">
-                  <!-- - Danh mục -->
-                  <ul id="header__navbar-list-item" class="header__navbar-list-item navbar-nav mx-auto mb-lg-0 ">
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="home nav-link  pe-4 ps-4 fw-bold active " href="#home">Trang Chủ</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1  ">
-                        <a class="about nav-link  pe-4 ps-4 fw-bold  " href="#about">Giới Thiệu</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="service nav-link  pe-4 ps-4 fw-bold  " href="#service">Dịch Vụ</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="news nav-link  pe-4 ps-4 fw-bold   " href="#news">Tin Tức</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="contact nav-link  pe-4 ps-4 fw-bold  " href="#contact">Liên Hệ</a>
-                     </li>
-                  </ul>
-               </div>
-               <!-- - Flat -->
-               <div class="header__navbar-flat d-none d-sm-block me-4">
+            <ul class=" list-unstyled d-flex  ">
+               <li class="header__navbar-item ">
+                  <a class="header__navbar-link " href="#">
+                     <img class="header__navbar-link-icon" src="./assets/img/vn.svg" alt="" width=24>
+                  </a>
+               </li>
+               <li class="header__navbar-item ">
+                  <a class="header__navbar-link " href="#">
+                     <img class="header__navbar-link-icon" src="./assets/img/en.svg" alt="" width=24>
+                  </a>
+               </li>
+               <li class="header__navbar-item ">
+                  <a class="header__navbar-link " href="#">
+                     <img class="header__navbar-link-icon" src="./assets/img/jp.svg" alt="" width=24>
+                  </a>
+               </li>
+            </ul>
+         </div>
 
-                  <ul class=" navbar-nav flex-row  ">
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/vn.svg" alt="" width=24>
-                        </a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/en.svg" alt="" width=24>
-                        </a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/jp.svg" alt="" width=24>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
+
          <!-- // -->
 
 
@@ -206,13 +195,25 @@
       <div class="carousel-inner">
          <div class="carousel-item  active">
             <div class="d-none d-lg-block ">
+               <h5 class=" w-100 text-center text-light animate__animated animate__fadeInDown animate__delay-1s ">
+                  QUẢN TRỊ
+                  DOANH
+                  NGHIỆP ERP ODOO
+               </h5>
+            </div>
+            <img src="./assets/img/erp.png" class="carousel-img d-block w-100" alt="...">
+         </div>
+
+         <div class="carousel-item">
+            <div class="d-none d-lg-block ">
                <h5 class=" w-100 text-center text-light  animate__animated animate__fadeInDown animate__delay-1s ">
                   HỆ
                   THỐNG PHẦN MỀM IOT
                </h5>
             </div>
-            <img src="./assets/img/iot.jpg" class="carousel-img d-block w-100" alt="...">
+            <img src="./assets/img/bigdata.png" class="carousel-img d-block w-100" alt="...">
          </div>
+
          <div class="carousel-item">
             <div class="d-none d-lg-block ">
                <h5 class=" w-100 text-center text-light animate__animated animate__fadeInDown animate__delay-1s ">HỆ
@@ -222,16 +223,6 @@
                </h5>
             </div>
             <img src="./assets/img/ecommere.jpg" class="carousel-img d-block w-100" alt="...">
-         </div>
-         <div class="carousel-item">
-            <div class="d-none d-lg-block ">
-               <h5 class=" w-100 text-center text-light animate__animated animate__fadeInDown animate__delay-1s ">
-                  QUẢN TRỊ
-                  DOANH
-                  NGHIỆP ERP ODOO
-               </h5>
-            </div>
-            <img src="./assets/img/OdooERP.jpg" class="carousel-img d-block w-100" alt="...">
          </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -251,16 +242,10 @@
    <!-- ... -->
    <section id="about" class="d-flex justify-content-center pt-100 pb-100">
       <div class="container">
-
-
          <div class="about-title aos-init aos-animate" data-aos="zoom-out-right">
             <h2>Giới Thiệu</h2>
-
-
             <p class=" fw-bold">IOT SOFWARE</p>
-
          </div>
-
 
          <div class="about-description row aos-init aos-animate" data-aos="zoom-out-left">
             <div class="col-lg-5">
@@ -269,7 +254,8 @@
                   năm kinh nghiệm đáp ứng nhu cầu về lĩnh vực CNTT, IoT, AI, Computer Vision, Big Data, APP...
                </p>
                <ul class="list-unstyled">
-                  <li class="mb-3"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB - IOT - ERP
+                  <li class="mb-3"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB - IOT -
+                     ERP
                      -
                      E-COMMERCE.
                   </li>
@@ -331,7 +317,8 @@
 
       </div>
    </section>
-   <section id="service" class="d-flex justify-content-center pt-100 pb-100 animate__animated animate__fadeInDown">dich
+   <section id="service" class="d-flex justify-content-center pt-100 pb-100 animate__animated animate__fadeInDown">
+      dich
       vu</section>
    <section id="news" class="d-flex justify-content-center pt-100 pb-100">tin tuc</section>
    <section id="contact" class="d-flex justify-content-center pt-100 pb-100">lien he</section>
