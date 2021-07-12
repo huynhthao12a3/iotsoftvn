@@ -4,6 +4,7 @@
    --foreign-color: #313447;
    --header-color: #01B3A7;
    --animate-delay: 0.5s;
+   --navbar-height: 70px;
 }
 * {
    padding: 0;
@@ -71,7 +72,7 @@ html {
    border-top: 2px solid var(--primary-color);
    width: 100%;
    /* max-width: 1200px; */
-   height: 50px;
+   height: var(--navbar-height);
    overflow:hidden;
   
 }
@@ -97,7 +98,7 @@ html {
 
 .header__navbar-link{
    border-radius: 40px;
-   line-height: 50px;
+   line-height: var(--navbar-height);
 }
 
 .header__navbar-item:hover .header__navbar-link{
@@ -110,8 +111,8 @@ html {
 
 /* - Mobile menu */
 .mobile-menu-btn{
-   line-height: 50px;
-   height:50px;
+   line-height: var(--navbar-height);
+   height:var(--navbar-height);
 }
 .mobile-menu-btn:hover {
    background-color: var(--primary-color);
