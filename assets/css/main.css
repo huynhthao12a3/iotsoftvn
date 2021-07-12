@@ -126,7 +126,7 @@ html {
    background-color: #ccc !important;
 }
 .carousel-inner .carousel-img {
-   height: calc(100vh - 134px);
+   height: calc(100vh - var(--navbar-height) - 84px);
    min-height: 40vh;
 }
 
