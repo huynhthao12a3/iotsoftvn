@@ -1,15 +1,21 @@
 /* ----- Mobile ------ */
-@media (max-width: 739px){
-
+@media (max-width: 576px){
+     .header__navbar-list-item {
+          display:block !important;
+     }
+     
 }
 
 /* ----- Tablet ----- */
-@media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px){
 
 }
 
 /* ----- Mobile & Tablet ----- */
 @media (max-width: 1023px){
+     .mobile-menu-btn{
+          display:block;
+     }
 
 }
 
@@ -19,10 +25,8 @@
 }
 
 /* ----- Tablet & PC ----- */
-@media (min-width: 740px){
-     .header__navbar-expand-m{
-          flex-wrap: wrap;
-          justify-content: flex-start;
-          
+@media (min-width: 768px){
+     .mobile-menu-btn{
+          display: none;
      }
 }

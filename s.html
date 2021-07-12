@@ -72,66 +72,62 @@
       </section>
    </header>
    <!-- Navbar  -->
-   <nav id="header__navbar-fixed" class=" header__navbar shadow-lg ">
-      <div class=" container-fluid wrap-header ">
-         <!-- // -->
-         <nav class=" navbar navbar-expand-md p-0 ">
-            <div class=" container">
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <i class="fas fa-bars" style="color: #fff; font-size:32px;"></i>
-               </button>
+   <nav id="header__navbar-fixed" class=" header__navbar shadow-lg  d-flex justify-content-between ps-3 pe-3">
+      <!-- - Danh mục -->
+      <ul class="header__navbar-list-item list-unstyled d-flex ms-2 mb-0">
+         <li class=" header__navbar-item   ">
+            <a class="home header__navbar-link  text-decoration-none mx-1 py-2 px-md-3 px-sm-1 fw-bold  nav-active "
+               href="#home">Trang Chủ</a>
+         </li>
+         <li class=" header__navbar-item    ">
+            <a class="about header__navbar-link text-decoration-none mx-1 py-2 px-md-3 px-sm-1 fw-bold  "
+               href="#about">Giới
+               Thiệu</a>
+         </li>
+         <li class=" header__navbar-item   ">
+            <a class="service header__navbar-link text-decoration-none mx-1 py-2 px-md-3 px-sm-1 fw-bold  "
+               href="#service">Dịch
+               Vụ</a>
+         </li>
+         <li class=" header__navbar-item   ">
+            <a class="news header__navbar-link text-decoration-none mx-1 py-2 px-md-3 px-sm-1 fw-bold   "
+               href="#news">Tin
+               Tức</a>
+         </li>
+         <li class=" header__navbar-item   ">
+            <a class="contact header__navbar-link text-decoration-none mx-1 py-2 px-md-3 px-sm-1 fw-bold  "
+               href="#contact">Liên
+               Hệ</a>
+         </li>
+      </ul>
+      <!-- - Flat -->
+      <div class="header__navbar-flat d-none d-md-block me-4">
 
-               <div class="header__navbar-list collapse navbar-collapse flex-md-grow-0" id="navbarSupportedContent">
-                  <!-- - Danh mục -->
-                  <ul id="header__navbar-list-item" class="header__navbar-list-item navbar-nav mx-auto mb-lg-0 ">
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="home nav-link  pe-4 ps-4 fw-bold nav-active " href="#home">Trang Chủ</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1  ">
-                        <a class="about nav-link  pe-4 ps-4 fw-bold  " href="#about">Giới Thiệu</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="service nav-link  pe-4 ps-4 fw-bold  " href="#service">Dịch Vụ</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="news nav-link  pe-4 ps-4 fw-bold   " href="#news">Tin Tức</a>
-                     </li>
-                     <li class=" nav-item m-2 p-1 ">
-                        <a class="contact nav-link  pe-4 ps-4 fw-bold  " href="#contact">Liên Hệ</a>
-                     </li>
-                  </ul>
-               </div>
-               <!-- - Flat -->
-               <div class="header__navbar-flat d-none d-sm-block me-4">
+         <ul class=" list-unstyled d-flex m-0 ">
+            <li class="header__navbar-item me-2">
+               <a class="header__navbar-link " href="#">
+                  <img class="header__navbar-link-icon" src="./assets/img/vn.svg" alt="" width=24>
+               </a>
+            </li>
+            <li class="header__navbar-item me-2">
+               <a class="header__navbar-link " href="#">
+                  <img class="header__navbar-link-icon" src="./assets/img/en.svg" alt="" width=24>
+               </a>
+            </li>
+            <li class="header__navbar-item me-2">
+               <a class="header__navbar-link " href="#">
+                  <img class="header__navbar-link-icon" src="./assets/img/jp.svg" alt="" width=24>
+               </a>
+            </li>
+         </ul>
+      </div>
 
-                  <ul class=" navbar-nav flex-row  ">
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/vn.svg" alt="" width=24>
-                        </a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/en.svg" alt="" width=24>
-                        </a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                           <img class="nav-link-icon" src="./assets/img/jp.svg" alt="" width=24>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-         <!-- // -->
-
-
-
+      <!-- - Mobile menu  -->
+      <div id="mobile-menu" class="mobile-menu-btn ps-3 pe-3">
+         <i class="fas fa-bars"></i>
       </div>
    </nav>
+
    <!-- ----- Slider -->
    <!-- <section id="" class="home-slider owl-carousel">
       <div class="slider-item">
@@ -264,7 +260,8 @@
                   năm kinh nghiệm đáp ứng nhu cầu về lĩnh vực CNTT, IoT, AI, Computer Vision, Big Data, APP...
                </p>
                <ul class="list-unstyled">
-                  <li class="mb-3"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB - IOT - ERP
+                  <li class="mb-3"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB - IOT -
+                     ERP
                      -
                      E-COMMERCE.
                   </li>
@@ -326,7 +323,8 @@
 
       </div>
    </section>
-   <section id="service" class="d-flex justify-content-center pt-100 pb-100 animate__animated animate__fadeInDown">dich
+   <section id="service" class="d-flex justify-content-center pt-100 pb-100 animate__animated animate__fadeInDown">
+      dich
       vu</section>
    <section id="news" class="d-flex justify-content-center pt-100 pb-100">tin tuc</section>
    <section id="contact" class="d-flex justify-content-center pt-100 pb-100">lien he</section>

@@ -47,40 +47,37 @@ html {
    background-color: #fff;
 }
 
-/* ----- HEADER  */
+/* ----- HEADER ----- */
+
+/* - Introduce */
 .header__introduce {
    height: 84px;
 }
 .header__introduce-wrap img {
    zoom: 1.2;
 }
-
 .header__introduce-time p,
 .header__introduce-call a {
    color: #56567C;
    text-decoration: none;
 }
-
 .header__introduce-call a:hover {
    color: #5FC3BC;
 }
+
+/* - Header navbar */
 .header__navbar {
    background-color: var(--foreign-color);
-   /* border-top: 6px solid #FED152; */
-   width: 100%;
    border-top: 2px solid var(--primary-color);
+   width: 100%;
+   height: 50px;
+   overflow:hidden;
+  
 }
 
-.wrap-header {
-   max-width: 100%;
-   width: 1200px;
-}
 .header__navbar-link{
    text-transform: uppercase;
-   height:40px;
    color: #fff;
-   padding-left: 8px;
-   padding-right: 8px;
 }
 
 .header__navbar.fixed-top{
@@ -97,11 +94,29 @@ html {
    border:1px solid #FED152;
 }
 
-.header__navbar-list li a{
+.header__navbar-link{
    border-radius: 40px;
+   line-height: 50px;
+}
+
+.header__navbar-item:hover .header__navbar-link{
+   background-color: var(--primary-color);
+   color: #fff;
 }
 .nav-active{
    background-color: var(--primary-color);
+}
+
+/* - Mobile menu */
+.mobile-menu-btn{
+   line-height: 50px;
+   height:50px;
+}
+.mobile-menu-btn:hover {
+   background-color: var(--primary-color);
+}
+.mobile-menu-btn i {
+   color: #fff;
 }
 
 /* ----- Carousel Slider ----- */
@@ -109,7 +124,7 @@ html {
    background-color: #ccc !important;
 }
 .carousel-inner .carousel-img {
-   max-height: calc(100vh - 150px);
+   height: calc(100vh - 134px);
    min-height: 40vh;
 }
 
