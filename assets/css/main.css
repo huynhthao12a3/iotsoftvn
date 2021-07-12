@@ -70,6 +70,7 @@ html {
    background-color: var(--foreign-color);
    border-top: 2px solid var(--primary-color);
    width: 100%;
+   /* max-width: 1200px; */
    height: 50px;
    overflow:hidden;
   
@@ -144,7 +145,6 @@ html {
 #news,
 #contact{
    width:100%;
-
    display: flex;
    justify-content:center;
    align-items: center;
@@ -155,12 +155,17 @@ html {
 }
 #service{
    background-color: yellow;
+   height: 100vh;
 }
 #news{
    background-color: aqua;
+   height: 100vh;
+
 }
 #contact{
    background-color: purple;
+   height: 100vh;
+
 }
 
 /* ----- About section ----- */
