@@ -23,10 +23,10 @@ function myFunction() {
 
      var header = document.getElementById('header__navbar-fixed');
      var mobileMenu = document.getElementById('mobile-menu');
-     //Đóng/Mở mobile menu
+    //Đóng/Mở mobile menu
      mobileMenu.onclick = function () {
-          var isClose = header.clientHeight === 48
-     
+          var isClose = header.clientHeight === 68
+
           if (isClose) {
                header.style.height = 'auto';
           } else {
@@ -34,7 +34,7 @@ function myFunction() {
           }
      }
 
-     //Auto đóng
+    //Auto đóng
      var menuItems = document.querySelectorAll('nav li a[href*="#"]');
      for (var i = 0; i < menuItems.length; i++) {
           var menuItem = menuItems[i];
@@ -42,13 +42,15 @@ function myFunction() {
           menuItem.onclick = function (event) {
                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
                if (isParentMenu) {
-              // Bỏ qua mặc định trở về đầu trang
+              //Bỏ qua mặc định trở về đầu trang
                event.preventDefault();
                } else {
                header.style.height = null;
                }
           }
      }
+
+    
 // Aos animation 
 AOS.init({
      duration: 1200,

@@ -67,6 +67,7 @@ html {
 }
 
 /* - Header navbar */
+
 .header__navbar {
    background-color: var(--foreign-color);
    border-top: 2px solid var(--primary-color);
@@ -74,6 +75,8 @@ html {
    /* max-width: 1200px; */
    height: var(--navbar-height);
    overflow:hidden;
+   position: absolute;
+   z-index: 100;
   
 }
 
@@ -83,9 +86,11 @@ html {
 }
 
 .header__navbar.fixed-top{
+   position: fixed !important;
    background-color: #fff !important;
 }
-.header__navbar.fixed-top .header__navbar-link {
+.header__navbar.fixed-top .header__navbar-link,
+.header__navbar.fixed-top .mobile-menu-btn i {
    color: #000 !important;
    text-shadow: 0 0 1px var(--primary-color);
 }
@@ -122,6 +127,9 @@ html {
 }
 
 /* ----- Carousel Slider ----- */
+#carouselExampleIndicators{
+   margin-top: var(--navbar-height);
+}
 .carousel-indicators button {
    background-color: #ccc !important;
 }
@@ -187,4 +195,3 @@ html {
 .about-description p{
    text-align: justify;
 }
-
