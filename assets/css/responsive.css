@@ -1,8 +1,7 @@
 /* ----- Mobile ------ */
 @media (max-width: 576px){
-     .header__navbar-list-item {
-          display:block !important;
-     }
+     
+
      
 }
 
@@ -13,9 +12,7 @@
 
 /* ----- Mobile & Tablet ----- */
 @media (max-width: 1023px){
-     .mobile-menu-btn{
-          display:block;
-     }
+     
 
 }
 
@@ -26,7 +23,5 @@
 
 /* ----- Tablet & PC ----- */
 @media (min-width: 768px){
-     .mobile-menu-btn{
-          display: none;
-     }
+     
 }
