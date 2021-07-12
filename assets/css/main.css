@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 :root{
    --primary-color: #F4A850;
-   --foreign-color: #313447;
+   --foreign-color: #162E44;
    --header-color: #01B3A7;
    --animate-delay: 0.5s;
    --navbar-height: 70px;
@@ -35,6 +35,8 @@ html {
 .h-color{
    color: var(--header-color);
 }
+
+
 
  /* Loading  */
 #loading{
@@ -80,38 +82,73 @@ html {
   
 }
 
-.header__navbar-link{
-   text-transform: uppercase;
+
+
+.header__navbar.position-fixed{
+   background-color: #fff !important;
+}
+.header__navbar.position-fixed .header__navbar-link,
+.header__navbar.position-fixed .mobile-menu-btn i {
+   color: #000 ;
+   text-shadow: 0 0 1px var(--primary-color);
+}
+/* text effect navbar */
+.header__navbar-link {
+   position: relative;
+}
+.header__navbar-item:hover{
+   cursor: pointer;
+}
+.header__navbar-item:hover .header__navbar-link{
    color: #fff;
 }
 
-.header__navbar.fixed-top{
-   position: fixed !important;
-   background-color: #fff !important;
+.position-fixed .header__navbar-item:hover .header__navbar-link{
+   color: #000;
 }
-.header__navbar.fixed-top .header__navbar-link,
-.header__navbar.fixed-top .mobile-menu-btn i {
-   color: #000 !important;
-   text-shadow: 0 0 1px var(--primary-color);
+
+
+.header__navbar-link::before {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: 1px;
+   left: 20%;
+   height: 2px;
+   width: 60%;
+   background-color: var(--header-color);
+   transform-origin: right top;
+   transform: scale(0, 1);
+   transition: color 0.5s, transform 0.3s ease-out;
 }
-.header__navbar-item a{
-   font-size: 14px;
+
+.header__navbar-link:hover::before,
+.header__navbar-link:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+
 }
+/*  */
+
 .header__navbar-link-icon {
    border:1px solid #FED152;
 }
 
 .header__navbar-link{
+   font-size: 14px;
+   color: #fff;
    border-radius: 40px;
    line-height: var(--navbar-height);
+   text-transform: uppercase;
 }
 
-.header__navbar-item:hover .header__navbar-link{
+/* .header__navbar-item:hover .header__navbar-link{
    background-color: var(--primary-color);
    color: #fff;
-}
+} */
 .nav-active{
-   background-color: var(--primary-color);
+   background-color: var(--header-color);
+   color: #fff !important;
 }
 
 /* - Mobile menu */
@@ -120,7 +157,7 @@ html {
    height:var(--navbar-height);
 }
 .mobile-menu-btn:hover {
-   background-color: var(--primary-color);
+   background-color: var(--header-color);
 }
 .mobile-menu-btn i {
    color: #fff;
@@ -182,7 +219,7 @@ html {
 .about-title h2{
    font-family: 'Festive';
    font-size: 40px;
-   color: var(--primary-color);
+   color: var(--header-color);
 }
 .about-title p{
    font-size: 50px;
@@ -190,7 +227,7 @@ html {
 
 
 .about-description li i {
-   color: var(--primary-color);
+   color: var(--header-color);
 }
 .about-description p{
    text-align: justify;

@@ -9,13 +9,23 @@ function loadingFunction(){
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("header__navbar-fixed")
-var sticky = navbar.offsetTop;
+var fixed = navbar.offsetTop;
 
 function myFunction() {
-     if (window.pageYOffset >= sticky) {
-          navbar.classList.add("fixed-top")
+
+     if (window.pageYOffset >= 84) {
+          console.log("1111111111111")
+          navbar.classList.add("position-fixed")
+          navbar.classList.add("top-0")
+          navbar.classList.add("start-0")
+          navbar.classList.add("end-0")
      } else {
-          navbar.classList.remove("fixed-top");
+          console.log("2222222222222222")
+
+          navbar.classList.remove("position-fixed");
+          navbar.classList.remove("top-0")
+          navbar.classList.remove("start-0")
+          navbar.classList.remove("end-0")
      }
 }
 
