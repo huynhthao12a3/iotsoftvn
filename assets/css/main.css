@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 :root{
-   --primary-color: #F4A850;
-   --foreign-color: #162E44;
-   --header-color: #01B3A7;
+   --primary-color: #01B3A7;
+   --foreign-color: #F4A850;
+   --header-color: #162E44;
    --animate-delay: 0.5s;
    --navbar-height: 70px;
 }
@@ -23,7 +23,7 @@ html {
    
 }
 ::-webkit-scrollbar-thumb {
-   background: linear-gradient(rgb(255, 255, 253),var(--foreign-color));
+   background: linear-gradient(rgb(255, 255, 253),var(--header-color));
    border-radius: 6px;
 }
 
@@ -33,10 +33,15 @@ html {
 }
 
 .h-color{
-   color: var(--header-color);
+   color: var(--primary-color);
 }
 
-
+.pt-100{
+   padding-top: 100px;
+}
+.pb-100{
+   padding-bottom: 100px;
+}
 
  /* Loading  */
 #loading{
@@ -71,8 +76,8 @@ html {
 /* - Header navbar */
 
 .header__navbar {
-   background-color: var(--foreign-color);
-   border-top: 2px solid var(--primary-color);
+   background-color: var(--header-color);
+   border-top: 2px solid var(--foreign-color);
    width: 100%;
    /* max-width: 1200px; */
    height: var(--navbar-height);
@@ -90,7 +95,7 @@ html {
 .header__navbar.position-fixed .header__navbar-link,
 .header__navbar.position-fixed .mobile-menu-btn i {
    color: #000 ;
-   text-shadow: 0 0 1px var(--primary-color);
+   text-shadow: 0 0 1px var(--foreign-color);
 }
 /* text effect navbar */
 .header__navbar-link {
@@ -107,7 +112,7 @@ html {
    color: #000;
 }
 
-
+.about-detail-btn::before,
 .header__navbar-link::before {
    content: "";
    display: block;
@@ -116,12 +121,14 @@ html {
    left: 20%;
    height: 2px;
    width: 60%;
-   background-color: var(--header-color);
+   background-color: var(--primary-color);
    transform-origin: right top;
    transform: scale(0, 1);
    transition: color 0.5s, transform 0.3s ease-out;
 }
 
+.about-detail-btn:hover::before,
+.about-detail-btn:focus::before,
 .header__navbar-link:hover::before,
 .header__navbar-link:focus::before {
     transform-origin: left top;
@@ -142,12 +149,8 @@ html {
    text-transform: uppercase;
 }
 
-/* .header__navbar-item:hover .header__navbar-link{
-   background-color: var(--primary-color);
-   color: #fff;
-} */
 .nav-active{
-   background-color: var(--header-color);
+   background-color: var(--primary-color);
    color: #fff !important;
 }
 
@@ -157,7 +160,7 @@ html {
    height:var(--navbar-height);
 }
 .mobile-menu-btn:hover {
-   background-color: var(--header-color);
+   background-color: var(--primary-color);
 }
 .mobile-menu-btn i {
    color: #fff;
@@ -176,7 +179,7 @@ html {
 }
 
 .carousel-item {
-   background-color: var(--foreign-color);
+   background-color: var(--header-color);
 }
 .carousel-item h5 {
    position:absolute;
@@ -194,7 +197,7 @@ html {
    display: flex;
    justify-content:center;
    align-items: center;
-   padding: 100px 0;
+ 
 }
 #about{
    background-color: #FFF;
@@ -216,19 +219,44 @@ html {
 
 /* ----- About section ----- */
 
+/* - About title */
 .about-title h2{
    font-family: 'Festive';
    font-size: 40px;
-   color: var(--header-color);
+   color: var(--primary-color);
 }
 .about-title p{
    font-size: 50px;
 }
 
-
+/* - About description */
 .about-description li i {
-   color: var(--header-color);
+   color: var(--primary-color);
 }
 .about-description p{
    text-align: justify;
+}
+
+/* - About detail */
+.about-detail-item {
+   position: relative;
+}
+
+.about-detail-btn::before {
+   left: 0;
+   bottom:-3px;
+   height: 3px;
+   width: 100%;
+}
+.about-detail-btn:hover,
+.about-detail-btn:focus{
+   color: var(--primary-color);
+}
+.about-detail-list {
+   border-bottom: 3px solid #ccc;
+}
+
+.about-detail-btn {
+   border: none;
+   background-color: #fff;
 }

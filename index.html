@@ -26,7 +26,8 @@
    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
    <!-- Font Awesome -->
-   <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
+   <!-- <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css"> -->
+   <link rel="stylesheet" href="./assets/font-awesome-pro-master/font-awesome-pro-master/css/all.min.css">
    <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/responsive.css">
 
@@ -130,67 +131,6 @@
       </div>
    </nav>
 
-   <!-- ----- Slider -->
-   <!-- <section id="" class="home-slider owl-carousel">
-      <div class="slider-item">
-         <div class="container">
-            <div class="row slider-text align-items-center">
-               <div class="col-xl-5 col-sm-12 ">
-                  <h3 class="animate__animated animate__bounce animate__repeat-2">HỆ THỐNG THƯƠNG MẠI ĐIỆN TỬ</h3>
-                  <p>Chính thức ra mắt và gia nhập thị trường Việt Nam từ
-                     năm 2019. với mục đích tạo ra một sàn giao
-                     dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng những giao
-                     dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn và hiệu quả nhất.</p>
-
-               </div>
-               <div class="col-xl-6 d-none d-xl-block offset-lg-1 pt-3">
-                  <div class="slider-img" style="background-image: url('./assets/img/ecommere.jpg');">
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="slider-item">
-         <div class="container">
-            <div class="row slider-text align-items-center">
-               <div class="col-xl-5 col-sm-12">
-                  <h3>QUẢN TRỊ DOANH NGHIỆP ERP ODOO</h3>
-                  <p>Quản trị doanh nghiệp ERP ODOO tích hợp hơn 30 phân hệ cốt lõi và hơn 1000 ứng dụng tùy chỉnh, hỗ
-                     trợ quản trị doanh nghiệp hiệu quả. Tùy vào mô hình doanh nghiệp và nhu cầu sử dụng mà các doanh
-                     nghiệp có thể lựa chọn những phân hệ phù hợp.</p>
-
-               </div>
-               <div class="col-xl-6 d-none d-xl-block offset-lg-1 pt-3">
-                  <div class="slider-img" style="background-image: url('./assets/img/OdooERP.jpg');">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="slider-item">
-         <div class="container">
-            <div class="row slider-text align-items-center">
-               <div class="col-xl-5 col-sm-12">
-                  <h3>HỆ THỐNG PHẦN MỀM</h1>
-                     <p>IOT SOFT tự
-                        hào mình là một tổ chức có thể cung cấp các dịch vụ với chất lượng cao, đủ để đáp ứng những nhu
-                        cầu phức tạp nhất, những đòi hỏi khắt khe nhất về chất lượng sản phẩm và tinh thần trách nhiệm
-                        cao nhất với chi phí hợp lý trong thị trường phần mềm cạnh tranh gay gắt hiện nay.</p>
-
-               </div>
-               <div class="col-xl-6 d-none d-xl-block offset-lg-1 pt-3">
-                  <div class="slider-img" style="background-image: url('./assets/img/iot.jpg');">
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section> -->
-
    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="mb-2 carousel-indicators">
          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -247,15 +187,15 @@
 
 
 
-   <!-- ... -->
+   <!-- About section -->
    <section id="about" class="d-flex justify-content-center pt-100 pb-100">
       <div class="container">
-         <div class="about-title aos-init aos-animate" data-aos="zoom-out-right">
+         <div class="about-title " data-aos="zoom-out-right">
             <h2>Giới Thiệu</h2>
             <p class=" fw-bold">IOT SOFWARE</p>
          </div>
-
-         <div class="about-description row aos-init aos-animate" data-aos="zoom-out-left">
+         <!-- About description  -->
+         <div class="about-description row " data-aos="zoom-out-left">
             <div class="col-lg-5">
                <p class="lh-lg">
                   Được thành lập bởi các chuyên gia với nhiều
@@ -320,6 +260,49 @@
                      <i class="fas fa-angle-double-left text-muted"></i>
                   </p>
                </blockquote>
+            </div>
+         </div>
+
+         <!-- About detail  -->
+         <div class="about-detail row pt-100">
+            <div class=" col-12 col-xl-4 col-lg-5 text-center pb-lg-0 pb-5" data-aos="fade-right">
+               <img class="img-thumbnail " src="./assets/img/building.jpg" alt="">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-7" data-aos="fade-left">
+               <p class="fw-bold fs-1 text-center">IOT SOFTWARE VN</p>
+               <ul class="about-detail-list list-unstyled d-flex justify-content-around">
+                  <li class="about-detail-item mx-sm-4">
+                     <button class="about-detail-btn text-uppercase p-2 " onclick="ButtonInfo()">Thông Tin</button>
+                  </li>
+                  <li class="about-detail-item mx-sm-4">
+                     <button class="about-detail-btn text-uppercase p-2" onclick="ButtonVision()">Tầm Nhìn</button>
+                  </li>
+                  <li class="about-detail-item mx-sm-4">
+                     <button class="about-detail-btn text-uppercase p-2" onclick="ButtonMission()">Sứ Mạng</button>
+                  </li>
+
+               </ul>
+               <div class="about-detail-para text-center ">
+
+                  <p id="about-detail-para-item1" class="my-2">
+                     <strong> Tên Đơn vị: </strong> Công ty TNHH Giải pháp Công nghệ Phần mềm kết nối số Việt Nam IOT
+                     Software
+                  </p>
+                  <i class="fal fa-waveform-path"></i><i class="fal fa-waveform-path"></i><i
+                     class="fal fa-waveform-path"></i>
+                  <p id="about-detail-para-item2" class="my-2">
+                     <strong>Tên tiếng Anh: </strong> Vietnam Digital Connection
+                     Software
+                     Solutions Co.,
+                     Ltd. IOT
+                     Software
+                  </p>
+                  <i class="fal fa-waveform-path"></i><i class="fal fa-waveform-path"></i><i
+                     class="fal fa-waveform-path"></i>
+                  <p id="about-detail-para-item3" class="my-2">
+                     <strong>Tên viết tắt: </strong> IOT SOFTWARE VN
+                  </p>
+               </div>
             </div>
          </div>
 
