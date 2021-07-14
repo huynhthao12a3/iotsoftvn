@@ -62,7 +62,7 @@ for (var i = 0; i < menuItems.length; i++) {
 AOS.init({
      duration: 1000,
      easing: 'ease-in-out',
-     once: true,
+     once: false,
      mirror: false,
      anchorPlacement: 'top-bottom',
 })

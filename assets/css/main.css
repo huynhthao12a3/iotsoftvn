@@ -197,6 +197,7 @@ html {
 /* Section */
 #about,
 #service,
+#product,
 #news,
 #contact{
    width:100%;
@@ -208,8 +209,12 @@ html {
    background-color: #FFF;
 }
 #service{
-   background-color: #fff;
-   
+   /* background-color: rgba(1, 179, 167,0.05); */
+   background-image: url(../img/pattern1.png);
+}
+#product{
+   background-color:#fff;
+   height: 100vh;
 }
 #news{
    background-color: #DD356E;
@@ -300,4 +305,3 @@ html {
    color:#fff;
    background-color: #AC61EA;
 }
-
