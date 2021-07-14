@@ -14,14 +14,11 @@ var fixed = navbar.offsetTop;
 function myFunction() {
 
      if (window.pageYOffset >= 84) {
-          console.log("1111111111111")
           navbar.classList.add("position-fixed")
           navbar.classList.add("top-0")
           navbar.classList.add("start-0")
           navbar.classList.add("end-0")
      } else {
-          console.log("2222222222222222")
-
           navbar.classList.remove("position-fixed");
           navbar.classList.remove("top-0")
           navbar.classList.remove("start-0")
@@ -70,48 +67,6 @@ AOS.init({
      anchorPlacement: 'top-bottom',
 })
 
-// $('#carouselExampleIndicators').carousel();
-
-// const sliderItem = document.querySelectorAll('.slider-item h3');
-// console.log(sliderItem)
-// $('.slider-item').onload = function(){
-//      let current = '';
-//      sliderItem.forEach(item => {
-//           item.classList.remove('animate__animated animate__fadeInDown');
-//           if(item.classList.contains(current)){
-//                item.classList.add('animate__animated animate__fadeInDown');
-//           }
-//      })()
-// }
-
-
-// Slider
-// $('.home-slider').owlCarousel({
-//           loop:true,
-//           autoplay:true,
-//           nav:true,
-//           margin:10,
-//           autoplayHoverPause:true,
-//           items:1,
-//           animationOut: 'fadeOut',
-//           animationIn: 'fadeIn',
-//           navText: ["<span class='fas fa-chevron-circle-left'></span>","<span class='fas fa-chevron-circle-right'></span>"],
-//           responsive:{
-//                     0:{
-//                               items: 1,
-//                               nav: false,
-//                     },
-//                     600:{
-//                               items: 1,
-//                               nav: false,
-//                     },
-//                     1000:{
-//                               items: 1,
-//                               nav: true,
-//                     }
-//           }
-// });
-
 // Highlight scroll to section
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav .header__navbar-list-item li a');
@@ -124,8 +79,6 @@ window.addEventListener('scroll', () => {
 
      sections.forEach(section => {
           const sectionTop = section.offsetTop;
-          console.log(pageYOffset)
-          console.log(sectionTop)
           if (pageYOffset >= (sectionTop - heightHeaderNavFix)) {
                current = section.getAttribute('id');
           }
@@ -141,30 +94,57 @@ window.addEventListener('scroll', () => {
 // About detail
 function ButtonInfo() 
 {
-     var para1 = document.getElementById("about-detail-para-item1");
-     var para2 = document.getElementById("about-detail-para-item2");
-     var para3 = document.getElementById("about-detail-para-item3");
+     var para1 = document.getElementById("about__detail-para-item1");
+     var para2 = document.getElementById("about__detail-para-item2");
+     var para3 = document.getElementById("about__detail-para-item3");
      para1.innerHTML = "<strong> Tên Đơn vị: </strong> Công ty TNHH Giải pháp Công nghệ Phần mềm kết nối số Việt Nam IOT Software";
      para2.innerHTML = "<strong>Tên tiếng Anh: </strong> Vietnam Digital Connection Software Solutions Co., Ltd. IOT Software</p>";
      para3.innerHTML = "<strong>Tên viết tắt: </strong> IOT SOFTWARE VN";
+
+     var btnActive = document.getElementById('btn-active');
+     btnActive.classList.remove('about__detail-btn--active');
 }
 
 function ButtonVision() 
 {
-     var para1 = document.getElementById("about-detail-para-item1");
-     var para2 = document.getElementById("about-detail-para-item2");
-     var para3 = document.getElementById("about-detail-para-item3");
-     para1.innerHTML = 'Trở thành ĐỐI TÁC hỗ trợ cho KHÁCH HÀNG trong việc TƯ VẤN, PHÁT TRIỂN và DUY TRÌ các hệ thống CÔNG NGHỆ.';
-     para2.innerHTML = "Đạt được sự tín nhiệm của khách hàng và các đối tác kinh doanh chính là nhân tố quan trọng góp phần vào sự thành công của IOT SOFTWARE.";
+     var para1 = document.getElementById("about__detail-para-item1");
+     var para2 = document.getElementById("about__detail-para-item2");
+     var para3 = document.getElementById("about__detail-para-item3");
+     para1.innerHTML = 'Trở thành đối tác trong việc tư vấn, phát triển và duy trì các hệ thống <em>CÔNG NGHỆ.</em>';
+     para2.innerHTML = "Đạt được sự tín nhiệm của khách hàng chính là nhân tố quan trọng góp phần vào sự thành công của <em>IOT SOFTWARE.</em>";
      para3.innerHTML = "Mục tiêu trở thành một trong những công ty cung cấp các dịch vụ CNTT đa dạng và chuyên sâu tại thị trường Viêt Nam.";
+
+     var btnActive = document.getElementById('btn-active');
+     btnActive.classList.remove('about__detail-btn--active');
 }
 
 function ButtonMission() 
 {
-     var para1 = document.getElementById("about-detail-para-item1");
-     var para2 = document.getElementById("about-detail-para-item2");
-     var para3 = document.getElementById("about-detail-para-item3");
-     para1.innerHTML = "Cung cấp đến khách hàng dịch vụ phân phối thiết bị CNTT chính hãng và đội ngũ triển khai chuyên nghiệp.";
-     para2.innerHTML = "Tư vấn, triển khai các giải pháp CNTT tối ưu và phù hợp theo yêu cầu, qui mô và đặc thù của doanh nghiệp.";
-     para3.innerHTML = 'CÔNG NGHỆ CỦA CHÚNG TÔI SẼ GIÚP KHÁCH HÀNG TỐI ƯU HÓA LỢI NHUẬN TRONG KINH DOANH';
+     var para1 = document.getElementById("about__detail-para-item1");
+     var para2 = document.getElementById("about__detail-para-item2");
+     var para3 = document.getElementById("about__detail-para-item3");
+     para1.innerHTML = 'Công nghệ của chúng tôi sẽ giúp khách hàng tối ưu hóa lợi nhuận trong kinh doanh.';
+     para2.innerHTML = "Cung cấp đến khách hàng dịch vụ CNTT chính hãng và đội ngũ triển khai chuyên nghiệp.";
+     para3.innerHTML = "Tư vấn, triển khai các giải pháp CNTT tối ưu và phù hợp theo yêu cầu, qui mô và đặc thù của doanh nghiệp.";
+
+     var btnActive = document.getElementById('btn-active');
+     btnActive.classList.remove('about__detail-btn--active');
+
 }
+
+// const serviceOffset = document.getElementById('service');
+// console.log(window.pageYOffset);
+// console.log(serviceOffset.offsetTop);
+// if(pageYOffset >= serviceOffset.offsetTop){
+//      $('.counter').each(function () {
+//           $(this).prop('Counter',0).animate({
+//               Counter: $(this).text()
+//           }, {
+//               duration: 4000,
+//               easing: 'swing',
+//               step: function (now) {
+//                   $(this).text(Math.ceil(now));
+//               }
+//           });
+//       });
+// }

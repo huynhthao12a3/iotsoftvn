@@ -42,6 +42,12 @@ html {
 .pb-100{
    padding-bottom: 100px;
 }
+.pt-50{
+   padding-top: 50px;
+}
+.pb-50{
+   padding-bottom: 50px;
+}
 
  /* Loading  */
 #loading{
@@ -112,7 +118,7 @@ html {
    color: #000;
 }
 
-.about-detail-btn::before,
+.about__detail-btn::before,
 .header__navbar-link::before {
    content: "";
    display: block;
@@ -127,8 +133,8 @@ html {
    transition: color 0.5s, transform 0.3s ease-out;
 }
 
-.about-detail-btn:hover::before,
-.about-detail-btn:focus::before,
+.about__detail-btn:hover::before,
+.about__detail-btn:focus::before,
 .header__navbar-link:hover::before,
 .header__navbar-link:focus::before {
     transform-origin: left top;
@@ -197,22 +203,21 @@ html {
    display: flex;
    justify-content:center;
    align-items: center;
- 
 }
 #about{
    background-color: #FFF;
 }
 #service{
-   background-color: yellow;
-   height: 100vh;
+   background-color: #fff;
+   
 }
 #news{
-   background-color: aqua;
+   background-color: #DD356E;
    height: 100vh;
 
 }
 #contact{
-   background-color: purple;
+   background-color: #F25B64;
    height: 100vh;
 
 }
@@ -220,43 +225,79 @@ html {
 /* ----- About section ----- */
 
 /* - About title */
-.about-title h2{
-   font-family: 'Festive';
-   font-size: 40px;
-   color: var(--primary-color);
-}
-.about-title p{
+.about__title h3{
    font-size: 50px;
+   font-family: 'Festive';
+   color: var(--primary-color);
 }
 
+
 /* - About description */
-.about-description li i {
+.about__description li i {
    color: var(--primary-color);
 }
-.about-description p{
+.about__description p{
    text-align: justify;
 }
 
 /* - About detail */
-.about-detail-item {
+
+.about__detail-item {
    position: relative;
 }
 
-.about-detail-btn::before {
+.about__detail-btn::before {
    left: 0;
    bottom:-3px;
    height: 3px;
    width: 100%;
 }
-.about-detail-btn:hover,
-.about-detail-btn:focus{
+.about__detail-btn:hover,
+.about__detail-btn:focus{
    color: var(--primary-color);
 }
-.about-detail-list {
+.about__detail-list {
    border-bottom: 3px solid #ccc;
 }
 
-.about-detail-btn {
+.about__detail-btn {
    border: none;
    background-color: #fff;
 }
+.about__detail-btn--active {
+   color: var(--primary-color);
+   
+}
+
+/* ----- Service section ----- */
+
+/* Service title */
+.service__title h3{
+   font-family: 'Festive';
+   font-size: 50px;
+   color: var(--primary-color);
+}
+
+.service__info-item p,
+.service__info-item li {
+   text-align: justify; 
+}
+.service__info-item-first{
+   color:#fff;
+   background-color: #DD356E;
+}
+.service__info-item-second{
+   color:#fff;
+   background-color: #F25B64;
+}
+
+.service__info-item-third{
+   color:#fff;
+   background-color: #F4A850;
+}
+
+.service__info-item-four{
+   color:#fff;
+   background-color: #AC61EA;
+}
+
