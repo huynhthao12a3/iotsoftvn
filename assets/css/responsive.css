@@ -1,23 +1,17 @@
 /* ----- Mobile ------ */
-@media (max-width: 576px){
-     
+@media (max-width: 767.9px){
+   .project__title h3{
+      font-size: 40px;
+   }
+   .project__title h3::before,
+   .project__title h3::after{
+      width: 20px;
+   }
 
-     
 }
 
 /* ----- Tablet ----- */
-@media (min-width: 768px) and (max-width: 1023px){
-
-}
-
-/* ----- Mobile & Tablet ----- */
-@media (max-width: 1023px){
-     
-
-}
-
-/* ----- PC -----  */
-@media (min-width: 1024px){
+@media (min-width: 768px) {
 
 }
 

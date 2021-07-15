@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
-   --primary-color: #01B3A7;
+   /* #01B3A7  */
+   --primary-color: #04baad;
    --foreign-color: #F4A850;
-   --header-color: #162E44;
+   --header-color: #3F414C;
    --animate-delay: 0.5s;
    --navbar-height: 70px;
 }
@@ -27,15 +29,34 @@ html {
    border-radius: 6px;
 }
 
-/* Dùng chung  */
+/* ----- Dùng chung ----- */
 .lora-font{
    font-family: 'Lora';
 }
 
-.h-color{
+.primary-color{
    color: var(--primary-color);
 }
-
+/* Zoom Image when Hover  */
+.hov-img-zoom {
+	display: block;
+	overflow: hidden;
+}
+.hov-img-zoom img{
+	width: 100%;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+.hov-img-zoom:hover img {
+	-webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* - */
 .pt-100{
    padding-top: 100px;
 }
@@ -48,6 +69,7 @@ html {
 .pb-50{
    padding-bottom: 50px;
 }
+
 
  /* Loading  */
 #loading{
@@ -101,7 +123,7 @@ html {
 .header__navbar.position-fixed .header__navbar-link,
 .header__navbar.position-fixed .mobile-menu-btn i {
    color: #000 ;
-   text-shadow: 0 0 1px var(--foreign-color);
+   /* text-shadow: 0 0 1px var(--foreign-color); */
 }
 /* text effect navbar */
 .header__navbar-link {
@@ -197,7 +219,7 @@ html {
 /* Section */
 #about,
 #service,
-#product,
+#project,
 #news,
 #contact{
    width:100%;
@@ -212,9 +234,8 @@ html {
    /* background-color: rgba(1, 179, 167,0.05); */
    background-image: url(../img/pattern1.png);
 }
-#product{
+#project{
    background-color:#fff;
-   height: 100vh;
 }
 #news{
    background-color: #DD356E;
@@ -230,10 +251,24 @@ html {
 /* ----- About section ----- */
 
 /* - About title */
-.about__title h3{
+.about__title h3,
+.service__title h3,
+.project__title h3{
    font-size: 50px;
    font-family: 'Festive';
    color: var(--primary-color);
+}
+
+.about__title h3::after,
+.service__title h3::after,
+.project__title h3::before,
+.project__title h3::after{
+   content: "";
+   width: 100px;
+   height: 1px;
+   margin: 8px 10px;
+   display: inline-block;
+   background-color: var(--primary-color);
 }
 
 
@@ -277,11 +312,6 @@ html {
 /* ----- Service section ----- */
 
 /* Service title */
-.service__title h3{
-   font-family: 'Festive';
-   font-size: 50px;
-   color: var(--primary-color);
-}
 
 .service__info-item p,
 .service__info-item li {
@@ -304,4 +334,41 @@ html {
 .service__info-item-four{
    color:#fff;
    background-color: #AC61EA;
+}
+
+
+/* ----- Project section ----- */
+
+.swiper-container{
+   width: 100%;
+   
+}
+.swiper-slide{
+   border-radius: 12px;
+   min-height: 510px;
+
+   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+.swiper-slide h4{
+   color: #000;
+   letter-spacing: 2px;
+}
+.swiper-slide h4:hover{
+   color: var(--primary-color);
+}
+.swiper-slide p{
+   text-align: justify;
+   font-family: 'Roboto';
+}
+
+#project .swiper-pagination .swiper-pagination-bullet {
+   margin-right: 20px;
+   width: 14px;
+   height: 14px;
+   background: #ccc;
+   opacity: 1;
+}
+
+#project .swiper-pagination-bullet.swiper-pagination-bullet-active {
+   background-color: var(--primary-color);
 }

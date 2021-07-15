@@ -32,7 +32,7 @@ var header = document.getElementById('header__navbar-fixed');
 var mobileMenu = document.getElementById('mobile-menu');
 //Đóng/Mở mobile menu
 mobileMenu.onclick = function () {
-     var isClose = header.clientHeight === 68
+     let isClose = header.clientHeight === 68
 
      if (isClose) {
           header.style.height = 'auto';
@@ -43,11 +43,11 @@ mobileMenu.onclick = function () {
 
 //Auto đóng
 var menuItems = document.querySelectorAll('nav li a[href*="#"]');
-for (var i = 0; i < menuItems.length; i++) {
-     var menuItem = menuItems[i];
+for (let i = 0; i < menuItems.length; i++) {
+     let menuItem = menuItems[i];
 
      menuItem.onclick = function (event) {
-          var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+          let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
           if (isParentMenu) {
                //Bỏ qua mặc định trở về đầu trang
                event.preventDefault();
@@ -62,7 +62,7 @@ for (var i = 0; i < menuItems.length; i++) {
 AOS.init({
      duration: 1000,
      easing: 'ease-in-out',
-     once: false,
+     once: true,
      mirror: false,
      anchorPlacement: 'top-bottom',
 })
@@ -91,60 +91,80 @@ window.addEventListener('scroll', () => {
      })
 })
 
-// About detail
+// About detail Click
 function ButtonInfo() 
 {
-     var para1 = document.getElementById("about__detail-para-item1");
-     var para2 = document.getElementById("about__detail-para-item2");
-     var para3 = document.getElementById("about__detail-para-item3");
+     let para1 = document.getElementById("about__detail-para-item1");
+     let para2 = document.getElementById("about__detail-para-item2");
+     let para3 = document.getElementById("about__detail-para-item3");
      para1.innerHTML = "<strong> Tên Đơn vị: </strong> Công ty TNHH Giải pháp Công nghệ Phần mềm kết nối số Việt Nam IOT Software";
      para2.innerHTML = "<strong>Tên tiếng Anh: </strong> Vietnam Digital Connection Software Solutions Co., Ltd. IOT Software</p>";
      para3.innerHTML = "<strong>Tên viết tắt: </strong> IOT SOFTWARE VN";
 
-     var btnActive = document.getElementById('btn-active');
+     let btnActive = document.getElementById('btn-active');
      btnActive.classList.remove('about__detail-btn--active');
 }
 
 function ButtonVision() 
 {
-     var para1 = document.getElementById("about__detail-para-item1");
-     var para2 = document.getElementById("about__detail-para-item2");
-     var para3 = document.getElementById("about__detail-para-item3");
+     let para1 = document.getElementById("about__detail-para-item1");
+     let para2 = document.getElementById("about__detail-para-item2");
+     let para3 = document.getElementById("about__detail-para-item3");
      para1.innerHTML = 'Trở thành đối tác trong việc tư vấn, phát triển và duy trì các hệ thống <em>CÔNG NGHỆ.</em>';
      para2.innerHTML = "Đạt được sự tín nhiệm của khách hàng chính là nhân tố quan trọng góp phần vào sự thành công của <em>IOT SOFTWARE.</em>";
      para3.innerHTML = "Mục tiêu trở thành một trong những công ty cung cấp các dịch vụ CNTT đa dạng và chuyên sâu tại thị trường Viêt Nam.";
 
-     var btnActive = document.getElementById('btn-active');
+     let btnActive = document.getElementById('btn-active');
      btnActive.classList.remove('about__detail-btn--active');
 }
 
 function ButtonMission() 
 {
-     var para1 = document.getElementById("about__detail-para-item1");
-     var para2 = document.getElementById("about__detail-para-item2");
-     var para3 = document.getElementById("about__detail-para-item3");
+     let para1 = document.getElementById("about__detail-para-item1");
+     let para2 = document.getElementById("about__detail-para-item2");
+     let para3 = document.getElementById("about__detail-para-item3");
      para1.innerHTML = 'Công nghệ của chúng tôi sẽ giúp khách hàng tối ưu hóa lợi nhuận trong kinh doanh.';
      para2.innerHTML = "Cung cấp đến khách hàng dịch vụ CNTT chính hãng và đội ngũ triển khai chuyên nghiệp.";
      para3.innerHTML = "Tư vấn, triển khai các giải pháp CNTT tối ưu và phù hợp theo yêu cầu, qui mô và đặc thù của doanh nghiệp.";
 
-     var btnActive = document.getElementById('btn-active');
+     let btnActive = document.getElementById('btn-active');
      btnActive.classList.remove('about__detail-btn--active');
 
 }
 
-// const serviceOffset = document.getElementById('service');
-// console.log(window.pageYOffset);
-// console.log(serviceOffset.offsetTop);
-// if(pageYOffset >= serviceOffset.offsetTop){
-//      $('.counter').each(function () {
-//           $(this).prop('Counter',0).animate({
-//               Counter: $(this).text()
-//           }, {
-//               duration: 4000,
-//               easing: 'swing',
-//               step: function (now) {
-//                   $(this).text(Math.ceil(now));
-//               }
-//           });
-//       });
-// }
+
+// - Swiper Library - Project slide
+const swiper = new Swiper('.swiper-container', {
+     direction: 'horizontal',
+     preloadImages: false,
+     lazy: true,
+     loop: true,
+     speed: 500,
+     autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+     },
+     grabCursor: false,
+
+     slidesPerView: 'auto',
+     breakpoints: {
+          100:{
+               slidesPerView: 1,
+               spaceBetween: 10,
+          },
+          768: {
+               slidesPerView: 2,
+               spaceBetween: 20,
+          },
+          992:{
+               slidesPerView: 3,
+               spaceBetween:20,
+          }
+     },
+
+     pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+     },
+
+});

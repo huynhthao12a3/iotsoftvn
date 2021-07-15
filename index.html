@@ -31,6 +31,9 @@
    <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/responsive.css">
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+      integrity="sha512-IZyebVAIO5IWMM3Jcx/Z0awNNBq1YcqWW34QlhQy9fzM1XxzmX3gB/YmbPkVuH/EU8QvpeY92EGS45iW/YKt1g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -42,7 +45,7 @@
       <img src="./assets/img/spinner-icon-gif-23.gif" alt="">
    </div>
 
-   <!-- Header -->
+   <!-- - Header -->
    <header>
       <!-- Header introduce -->
       <section id="home" class="header__introduce">
@@ -52,17 +55,17 @@
                   <img src="https://www.iotsoftvn.com/images/icons/logo-02.png" alt="" style="margin-left: -18px;">
                </a>
                <div class=" col-lg-4 col-md-4  col-9 mb-0 mt-3">
-                  <h4 class="d-inline-block m-0 lora-font h-color">IOT</h4>
+                  <h4 class="d-inline-block m-0 lora-font primary-color">IOT</h4>
                   <h4 class="d-inline-block m-0 lora-font" style="color:#999999;">SOFTWARE</h4>
                </div>
                <div class="d-none d-md-block col-lg-4 col-md-6 offset-lg-3 mt-3">
                   <div class=" d-flex justify-content-around">
-                     <div class="header__introduce-time h-color d-flex ">
+                     <div class="header__introduce-time primary-color d-flex ">
                         <i class="far fa-clock pt-1 me-2"></i>
                         <p class="m-0 lora-font">08:00 AM — 05:00 PM </p>
                      </div>
 
-                     <div class="header__introduce-call h-color d-flex">
+                     <div class="header__introduce-call primary-color d-flex">
                         <i class="fas fa-phone-square-alt pt-1 me-2"></i>
                         <a class="lora-font " href="tel:+84978938760">097 893 87 60</a>
                      </div>
@@ -72,7 +75,9 @@
          </div>
       </section>
    </header>
-   <!-- Navbar  -->
+   <!-- End Header -->
+
+   <!-- - Navbar  -->
    <nav id="header__navbar-fixed" class=" header__navbar navbar-mobile shadow-lg  ">
       <!-- - Danh mục -->
       <div class=" container-lg d-flex justify-content-between ">
@@ -92,8 +97,8 @@
                   Vụ</a>
             </li>
             <li class=" header__navbar-item   ">
-               <a class="product header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
-                  href="#product">Sản Phẩm</a>
+               <a class="project header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
+                  href="#project">Dự Án</a>
             </li>
             <li class=" header__navbar-item   ">
                <a class="news header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold   "
@@ -134,7 +139,9 @@
          </div>
       </div>
    </nav>
+   <!--End Navbar  -->
 
+   <!-- - Slider -->
    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="mb-2 carousel-indicators">
          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -188,20 +195,20 @@
          <span class="visually-hidden">Next</span>
       </button>
    </div>
-
+   <!-- End Slider  -->
 
    <main>
       <!-- - About section -->
       <section id="about" class="d-flex justify-content-center pt-100 pb-100">
          <div class="container">
             <div class="about__title " data-aos="fade-right">
-               <h3><i class="fal fa-info-square me-3"></i>Giới Thiệu</h3>
+               <h3>Giới Thiệu</h3>
                <p class=" fw-bold display-6">IOT SOFWARE</p>
             </div>
 
             <!-- About description  -->
-            <div class="about__description row " data-aos="fade-right">
-               <div class="col-lg-5">
+            <div class="about__description row ">
+               <div class="col-lg-5" data-aos="fade-right">
                   <p class="lh-lg">
                      &nbsp;Được thành lập bởi các chuyên gia với nhiều
                      năm kinh nghiệm đáp ứng nhu cầu về lĩnh vực CNTT, IoT, AI, Computer Vision, Big Data, APP...
@@ -221,7 +228,7 @@
                         nhuận trong kinh doanh.</li>
                   </ul>
                </div>
-               <div class="col-lg-6 offset-lg-1 pt-4 pt-lg-0">
+               <div class="col-lg-6 offset-lg-1 pt-4 pt-lg-0" data-aos="fade-right">
                   <div class="row">
                      <div class="col-lg-12">
                         <p class="lh-lg">
@@ -322,7 +329,7 @@
       <section id="service" class="pattern d-flex justify-content-center pt-100 pb-100 ">
          <div class="container">
             <div class="service__title" data-aos="fade-left">
-               <h3><i class="fad fa-handshake me-3"></i>Dịch Vụ</h3>
+               <h3>Dịch Vụ</h3>
             </div>
             <div class="service__info row" data-aos="fade-left">
                <div class="service__info-item col-12 col-md-6 pt-3">
@@ -427,9 +434,153 @@
       </section>
       <!-- End service section -->
 
-      <!-- - Product section -->
-      <section id="product"></section>
-      <!-- End Product section -->
+      <!-- - Project section -->
+      <section id="project" class="pt-100 pb-100">
+         <div class="container">
+            <div class="project__title" data-aos="fade-right">
+               <h3 class="text-center">Dự Án Tiêu Biểu</h3>
+            </div>
+            <div class="swiper-container" data-aos="fade-right">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper align-items-center">
+                  <!-- Slides -->
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy " src="./assets/img/slide-quan-li-ban-hang.png"
+                           alt="He-thong-quan-ly-ban-hang ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Quản Lý Bán Hàng (CRM - Sales Managerment)</h4>
+                     </a>
+                     <p>
+                        Phần mềm hỗ trợ doanh nghiệp, cá nhân trong việc quản lý các phân đoạn bán hàng như: Nhập hàng,
+                        xuất hàng, quản lý hàng hóa, quản lí kho, quản lý đơn hàng, chăm sóc khách hàng, các dịch vụ ...
+                     </p>
+                  </div>
+
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-e-learning.jpg"
+                           alt="He-thong-quan-ly-hoc-tap-truc-tuyen ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Quản Lý Học Tập Trực Tuyến (E-Learning)</h4>
+                     </a>
+                     <p>
+                        Hệ thống quản lý học tập trực tuyến được phát triển và xây dựng bởi công ty IOT Software với đầy
+                        đủ các tính năng đa dạng như quản lý khóa học, giảng viên, học viên. Áp
+                        dụng cho doanh nghiệp quản lý đào tạo trực tuyến nội bộ cho các cán
+                        bộ, nhân viên mọi lúc, mọi nơi.
+                     </p>
+                  </div>
+
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-thuong-mai-dien-tu.png"
+                           alt="He-thong-thuong-mai-dien-tu ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Thương Mại Điện Tử (E-Commerce)</h4>
+                     </a>
+                     <p>
+                        Chính thức ra mắt và gia nhập thị trường Việt Nam từ năm 2019. với mục đích tạo ra một sàn giao
+                        dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng những
+                        giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn và hiệu quả nhất.
+                     </p>
+                  </div>
+
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-quan-li-xuat-van-chuyen.jpg"
+                           alt="He-thong-quan-ly-xuat-van-chuyen ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Quản Lý Xuất Vận Chuyển Hàng Hóa</h4>
+                     </a>
+                     <p>
+                        Hệ thống xuất vận chuyển do công ty IOTSOFTWARE VN xây dựng, phát triển dựa trên đa nền tảng với
+                        đầy đủ tính năng cho khách hàng, tài xế và phòng điều hành. Phần mềm quản lý xuất vận chuyển
+                        thực hiện hỗ trợ các quy trình đặt hàng, giao nhận, chuyển điều phối xe, quản lý các loại xe...
+                     </p>
+                  </div>
+
+
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-xo-so-kien-thiet.png"
+                           alt="He-thong-dong-quan-ly-tra-thuong-xo-so-kien-thiet ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Quản Lý Trả Thưởng Xổ Số Kiến Thiết</h4>
+                     </a>
+                     <p>
+                        Phần mềm hỗ trợ các đại lý, doanh nghiệp trong việc quản lý trả thưởng Xổ Số
+                        Kiến Thức được phát biển và xây dựng bởi công ty IOTSOFTVN với đầy đủ các tính năng
+                        đa dạng hỗ trợ việc chi trả thưởng cho cá nhân và đại lý.
+                     </p>
+                  </div>
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-dong-bo-may-cham-cong.png"
+                           alt="He-thong-dong-bo-va-tang-toc-tai-du-lieu-may-cham-cong ">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Hệ Thống Đồng Bộ Và Tăng Tốc Tải Dữ Liệu Máy Chấm Công</h4>
+                     </a>
+                     <p>
+                        Hệ thống đồng bộ và tăng tốc tải dữ liệu máy chấm công ra đời giúp giảm thời gian đồng bộ dữ
+                        liệu của các máy chấm công trong các nhà máy, khu công nghiệp,...
+                     </p>
+                  </div>
+
+
+
+
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-booking-xuat-van-chuyen.png"
+                           alt="Pham-mem-booking-xuat-van-chuyen">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Phần Mềm Booking Xuất Vận Chuyển</h4>
+                     </a>
+                     <p>
+                        Phần mềm Booking xuất vận chuyển do công ty IOTSOFTVN xây dựng, phát triển dựa trên đa nền
+                        tảng với đầy đủ tính năng, hỗ trợ đặt lịch, điều phối xe, quản lý việc thu gom rác nhằm tối ưu
+                        hóa việc vận chuyển và xử lý rác. Giúp tối ưu và giảm chi phí trong việc xử lý rác.
+                     </p>
+                  </div>
+
+                  <div class="swiper-slide d-flex flex-column p-3">
+                     <a href="#" class="hov-img-zoom rounded ">
+                        <img class="img-fluid swiper-lazy" src="./assets/img/slide-quan-li-cong-no.jpg"
+                           alt="Pham-mem-booking-xuat-van-chuyen">
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <h4 class="my-3">Phần Mềm Quản Lý Công Nợ</h4>
+                     </a>
+                     <p>
+                        Các doanh nghiệp có số lượng khách hàng lớn nhưng
+                        việc kiểm soát công nợ lại thực hiện thủ công. Chính vì vậy sai xót rất dễ xảy ra. Phần mềm do
+                        công ty IOT SOFTWARE VN thiết kế và xây dựng mang tính đơn giản hóa công việc xử
+                        lý công nợ của nhiều khách hàng với nhiều hình thức thanh toán theo từng mô hình kinh
+                        doanh của doanh nghiệp.
+                     </p>
+                  </div>
+
+               </div>
+
+               <div class="swiper-pagination mt-4 position-relative"></div>
+            </div>
+         </div>
+      </section>
+      <!-- End Project section -->
 
       <!-- - News section -->
       <section id="news" class="d-flex justify-content-center pt-100 pb-50">tin tuc</section>
@@ -447,8 +598,7 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <!-- Carousel slider -->
-   <!-- <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
    <!-- Style -->
    <script src="./assets/aos/aos.js"></script>
    <script src="./assets/js/main.js"></script>
