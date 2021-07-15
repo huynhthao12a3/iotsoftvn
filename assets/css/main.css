@@ -462,6 +462,7 @@ html {
    animation-duration:10s;
    animation-delay:4s;
 }
+
 @keyframes rise{
    0%{
       top:-100px;
@@ -492,8 +493,8 @@ html {
 }
 #bubble-tag-cloud .cloud-element {
    position: relative;
-   width: 240px;
-   height: 240px;
+   width: 200px;
+   height: 200px;
    border-radius: 50%;
    background: #F3F0F0;
    justify-items: center;
