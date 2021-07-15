@@ -8,6 +8,11 @@
       width: 20px;
    }
 
+   .bubble-wrap{
+      overflow: hidden;
+      border-radius: 50%;
+   }
+
 }
 
 /* ----- Tablet ----- */
