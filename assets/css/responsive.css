@@ -1,26 +1,33 @@
-/* ----- Mobile ------ */
+/* ----- 0 to < md ------ */
 @media (max-width: 767.9px){
-   .project__title h3{
+   .project__title h2{
       font-size: 40px;
    }
-   .project__title h3::before,
-   .project__title h3::after{
+   .project__title h2::before,
+   .project__title h2::after{
       width: 20px;
    }
 
-   .bubble-wrap{
+
+}
+
+/* ----- 0 to < lg ----- */
+@media (max-width: 991.9px) {
+   .customer-wrap{
       overflow: hidden;
       border-radius: 50%;
    }
-
+}
+/* ----- xl to up ----- */
+@media (min-width: 1200px){
+   .customer-wrap{
+      margin-top: -100px;
+   }
 }
 
-/* ----- Tablet ----- */
-@media (min-width: 768px) {
-
-}
-
-/* ----- Tablet & PC ----- */
-@media (min-width: 768px){
-     
+/* ----- xxl to up ----- */
+@media (min-width: 1400px){
+     .customer__slide{
+        margin-top: -150px;
+     }
 }

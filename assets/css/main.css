@@ -253,18 +253,18 @@ html {
 /* ----- About section ----- */
 
 /* - About title */
-.about__title h3,
-.service__title h3,
-.project__title h3{
+.about__title h2,
+.service__title h2,
+.project__title h2{
    font-size: 50px;
    font-family: 'Festive';
    color: var(--primary-color);
 }
 
-.about__title h3::after,
-.service__title h3::after,
-.project__title h3::before,
-.project__title h3::after{
+.about__title h2::after,
+.service__title h2::after,
+.project__title h2::before,
+.project__title h2::after{
    content: "";
    width: 100px;
    height: 1px;
@@ -341,23 +341,23 @@ html {
 
 /* ----- Project section ----- */
 
-.swiper-container{
+#project .swiper-container{
    width: 100%;
 }
-.swiper-slide{
+#project .swiper-slide{
    border-radius: 12px;
    min-height: 510px;
    background-color: #fff;
    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
-.swiper-slide h4{
+#project .swiper-slide h4{
    color: #000;
    letter-spacing: 2px;
 }
-.swiper-slide h4:hover{
+#project .swiper-slide h4:hover{
    color: var(--primary-color);
 }
-.swiper-slide p{
+#project .swiper-slide p{
    text-align: justify;
    font-family: 'Roboto';
 }
@@ -369,10 +369,16 @@ html {
    background: #ccc;
    opacity: 1;
 }
-
 #project .swiper-pagination-bullet.swiper-pagination-bullet-active {
    background-color: var(--primary-color);
 }
+
+/* Project counter */
+.project__counter i {
+   font-size: 50px;
+   color: var(--primary-color);
+}
+
 /* ----- Customer section ----- */
 /* Background animation */
 .bubbles{
@@ -476,22 +482,18 @@ html {
       transform:translate(200px);
    }
    100%{
-      top:900px;
+      top:1600px;
       transform:translateX(0px);
    }
 }
 /* List customer */
-#customer{
-   width: 100%;
-}
-#customer .customer-wrap{
+
+.customer-wrap{
    padding-bottom: 100%;
    display: block;
-   /* margin-top: -150px; */
 
 }
 .customer-list {
-   
    width: 100%;
    height: 100%;
    position: absolute;
@@ -521,60 +523,23 @@ html {
    height: auto;
 }
 
-/*  */
-
-/* .project-detail{
-   width: 90%;
-   margin: 0 auto;
-   font-size: 18px;
+/* Customer slide */
+.customer__title h2,
+.swiper-slide h3 {
+   color:#068c83;
+}
+#customer .customer__slide{
+   margin-left: auto;
+   margin-right: auto;
    position: relative;
-}
-.sec-tit{
-   font-size: 32px;
-   margin: 0 0 30px;
-   line-height: 40px;
-}
-.project-detail .stars-wp {
-   margin-bottom: 20px;
-   display: inline-block;
-}
-.bubble-wrap{
-   position: relative;
-    padding-bottom: 100%;
-    margin: 0 auto;
-    display: block;
-}
-.bubble-wrap .list-project {
-   background-repeat: no-repeat;
-   background-position: top left;
-   background-size: cover;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   left: 0;
-   top: 0;
-}
-.list-project .cloud-element a {
-   padding: 5px;
-   display: block;
-   width: 170px;
-   height: 170px;
    overflow: hidden;
-   position: relative;
-   border-radius: 50%;
-   background-color: #485053;
+   list-style: none;
+   padding: 0;
+   z-index: 1;
+   width: 100%;
 }
 
-.list-project .cloud-element a img {
-   max-width: 80%;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%,-50%);
-   -webkit-transform: translate(-50%,-50%);
-   max-height: 80%;
-   width: auto;
-   height: auto;
-   -webkit-filter: brightness(0) invert(1);
-   filter: brightness(0) invert(1);
-} */
+#customer .swiper-slide {
+   background-color: transparent;
+   
+}

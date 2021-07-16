@@ -1,11 +1,11 @@
-//  Loading website 
+// ----- Loading website 
 var preloader = document.getElementById("loading");
 setTimeout(loadingFunction, 500)
 function loadingFunction() {
      preloader.style.display = 'none';
 };
 
-// Navbar position fixed top 
+// ----- Navbar position fixed top 
 window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("header__navbar-fixed")
@@ -26,7 +26,7 @@ function myFunction() {
      }
 }
 
-// Navbar mobile
+// ----- Navbar mobile
 
 var header = document.getElementById('header__navbar-fixed');
 var mobileMenu = document.getElementById('mobile-menu');
@@ -41,7 +41,7 @@ mobileMenu.onclick = function () {
      }
 }
 
-//Auto đóng
+// ----- Auto đóng
 var menuItems = document.querySelectorAll('nav li a[href*="#"]');
 for (let i = 0; i < menuItems.length; i++) {
      let menuItem = menuItems[i];
@@ -58,16 +58,16 @@ for (let i = 0; i < menuItems.length; i++) {
 }
 
 
-// Aos animation 
+// ----- Aos animation 
 AOS.init({
-     duration: 1000,
+     duration: 1500,
      easing: 'ease-in-out',
      once: true,
      mirror: false,
      anchorPlacement: 'top-bottom',
 })
 
-// Highlight scroll to section
+// ----- Highlight scroll to section
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav .header__navbar-list-item li a');
 
@@ -91,7 +91,7 @@ window.addEventListener('scroll', () => {
      })
 })
 
-// About detail Click
+// ----- About detail Click
 function ButtonInfo() 
 {
      let para1 = document.getElementById("about__detail-para-item1");
@@ -133,8 +133,8 @@ function ButtonMission()
 }
 
 
-// - Swiper Library - Project slide
-const swiper = new Swiper('.swiper-container', {
+// ----- Swiper Library - Project slide
+const projectSwiper = new Swiper('.swiper-container', {
      direction: 'horizontal',
      preloadImages: false,
      lazy: true,
@@ -143,6 +143,7 @@ const swiper = new Swiper('.swiper-container', {
      autoplay: {
           delay: 3000,
           disableOnInteraction: false
+
      },
      grabCursor: false,
 
@@ -168,3 +169,54 @@ const swiper = new Swiper('.swiper-container', {
      },
 
 });
+
+// ----- Swiper - Customer slide 
+const customerSwiper = new Swiper('.customer__slide', {
+     direction: 'horizontal',
+     loop: true,
+     speed: 800,
+     spaceBetween: 20,
+     autoplay: {
+          delay: 4000,
+          disableOnInteraction: false
+
+     },
+     grabCursor: false,
+
+     slidesPerView: 1,
+
+});
+
+// ----- Project counting
+
+     $('.project-counting').countUp({
+          delay: 10,
+          time:  1600,
+          
+     });
+
+
+// window.addEventListener('scroll', ()=>{
+//      let projectSection = document.getElementById('project');
+//      if(window.pageYOffset == projectSection.offsetTop){
+//           $('.project-counting').each(function(){
+//                var $this = $(this),
+//                countTo = $this.attr('data-count')
+//                $({countNum: $this.text()}).animate({
+//                     countNum: countTo
+//                },
+//                {
+//                     duration: 2000,
+//                     easing: 'linear',
+//                     step: function(){
+//                          $this.text(Math.floor(this.countNum))
+//                     },
+//                     complete: function(){
+//                          $this.text(this.countNum + '+')
+//                     }
+                    
+//                }
+//                )
+//           })
+//      }
+// })
