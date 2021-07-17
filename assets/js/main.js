@@ -8,7 +8,7 @@ function loadingFunction() {
 // ----- Navbar position fixed top 
 window.onscroll = function () { myFunction() };
 
-var navbar = document.getElementById("header__navbar-fixed")
+var navbar = document.getElementById("navbar-fixed")
 var fixed = navbar.offsetTop;
 
 function myFunction() {
@@ -28,7 +28,7 @@ function myFunction() {
 
 // ----- Navbar mobile
 
-var header = document.getElementById('header__navbar-fixed');
+var header = document.getElementById('navbar-fixed');
 var mobileMenu = document.getElementById('mobile-menu');
 //Đóng/Mở mobile menu
 mobileMenu.onclick = function () {
@@ -189,19 +189,18 @@ const customerSwiper = new Swiper('.customer__slide', {
 
 // ----- Project counting
 
-     $('.project-counting').countUp({
-          delay: 10,
-          time:  1600,
-          
-     });
+$('.project-counting').countUp({
+     delay: 10,
+     time:  1600,       
+});
 
 
 // window.addEventListener('scroll', ()=>{
 //      let projectSection = document.getElementById('project');
-//      if(window.pageYOffset == projectSection.offsetTop){
+//      if(window.pageYOffset >= projectSection.offsetTop){
 //           $('.project-counting').each(function(){
 //                var $this = $(this),
-//                countTo = $this.attr('data-count')
+//                countTo = $this.attr('data')
 //                $({countNum: $this.text()}).animate({
 //                     countNum: countTo
 //                },

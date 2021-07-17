@@ -20,6 +20,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
    <!-- Bootstrap -->
    <link rel="stylesheet" href="./assets/animate/animate.min.css">
@@ -27,7 +29,6 @@
    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
    <!-- Font Awesome -->
-   <!-- <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css"> -->
    <link rel="stylesheet" href="./assets/font-awesome-pro-master/font-awesome-pro-master/css/all.min.css">
    <link rel="stylesheet" href="./assets/css/main.css">
    <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -52,23 +53,21 @@
       <section id="home" class="header__introduce">
          <div class="container  p-2">
             <div class="header__introduce-wrap p-1 row">
-               <a class=" col-lg-1 col-md-2  col-3" href="">
-                  <img src="https://www.iotsoftvn.com/images/icons/logo-02.png" alt="logo-iot-software">
-               </a>
-               <div class=" col-lg-4 col-md-4  col-9">
-                  <h1 class="d-inline-block m-0 lora-font primary-color">IOT SOFTWARE</h1>
+               <div class="d-flex col-lg-8 col-md-7  col-12">
+                  <a class="d-inline-block" href="">
+                     <img src="https://www.iotsoftvn.com/images/icons/logo-02.png" alt="logo-iot-software">
+                  </a>
+                  <h1 class="d-inline-block m-0 lora-font primary-color fs-2">IOT SOFTWARE</h1>
                </div>
-               <div class="d-none d-md-block col-lg-4 col-md-6 offset-lg-3 mt-3">
-                  <div class=" d-flex justify-content-around">
-                     <div class="header__introduce-time primary-color d-flex ">
-                        <i class="far fa-clock pt-1 me-2"></i>
-                        <p class="m-0 lora-font">08:00 AM — 05:00 PM </p>
-                     </div>
+               <div class="d-none d-md-flex justify-content-around flex-wrap col-lg-4 col-md-5 ">
+                  <div class="header__introduce-time align-self-center primary-color d-flex ">
+                     <i class="far fa-clock pt-1 me-2"></i>
+                     <p class="m-0 lora-font">08:00 AM — 05:00 PM </p>
+                  </div>
 
-                     <div class="header__introduce-call primary-color d-flex">
-                        <i class="fas fa-phone-square-alt pt-1 me-2"></i>
-                        <a class="lora-font " href="tel:+84978938760">097 893 87 60</a>
-                     </div>
+                  <div class="header__introduce-call align-self-center primary-color d-flex">
+                     <i class="fas fa-phone-square-alt pt-1 me-2"></i>
+                     <a class="lora-font " href="tel:+84978938760">097 893 87 60</a>
                   </div>
                </div>
             </div>
@@ -78,7 +77,7 @@
    <!-- End Header -->
 
    <!-- - Navbar  -->
-   <nav id="header__navbar-fixed" class=" header__navbar navbar-mobile shadow-lg  ">
+   <nav id="navbar-fixed" class=" header__navbar navbar-mobile shadow-lg  ">
       <!-- - Danh mục -->
       <div class=" container-lg d-flex justify-content-between ">
          <ul class="header__navbar-list-item list-unstyled d-block d-md-flex ms-2 mb-0">
@@ -141,15 +140,25 @@
    </nav>
    <!--End Navbar  -->
 
+   <!-- - Navbar Tablet & Mobile < 992px  -->
+   <nav id=>
+
+   </nav>
+   <!-- End Navbar Tablet & Mobile -->
+
    <!-- - Slider -->
-   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="mb-2 carousel-indicators">
-         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="mb-3 carousel-indicators">
+         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1">
+            <img src="./assets/img/OdooERP.jpeg" class="d-none d-lg-block w-100" alt="he-thong-erp">
+         </button>
+         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2">
+            <img src="./assets/img/iot.jpg" class="d-none d-lg-block w-100" alt="big-data-iot">
+         </button>
+         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3">
+            <img src="./assets/img/ecommere.jpg" class=" d-none d-lg-block w-100" alt="e-commerce">
+         </button>
       </div>
       <div class="carousel-inner">
          <div class="carousel-item  active">
@@ -160,7 +169,7 @@
                   NGHIỆP ERP ODOO
                </h5>
             </div>
-            <img src="./assets/img/erp.webp" class="carousel-img d-block w-100" alt="he-thong-erp">
+            <img src="./assets/img/OdooERP.jpeg" class="carousel-img d-block w-100" alt="he-thong-erp">
          </div>
 
          <div class="carousel-item">
@@ -170,7 +179,7 @@
                   THỐNG PHẦN MỀM IOT
                </h5>
             </div>
-            <img src="./assets/img/bigdata.webp" class="carousel-img d-block w-100" alt="big-data-iot">
+            <img src="./assets/img/iot.jpg" class="carousel-img d-block w-100" alt="big-data-iot">
          </div>
 
          <div class="carousel-item">
@@ -181,16 +190,14 @@
                   TỬ
                </h5>
             </div>
-            <img src="./assets/img/ecommere.webp" class="carousel-img d-block w-100" alt="e-commerce">
+            <img src="./assets/img/ecommere.jpg" class="carousel-img d-block w-100" alt="e-commerce">
          </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-         data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
          <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-         data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
          <span class="carousel-control-next-icon" aria-hidden="true"></span>
          <span class="visually-hidden">Next</span>
       </button>
@@ -332,7 +339,7 @@
                <h2>Dịch Vụ</h2>
             </div>
             <div class="service__info row" data-aos="fade-left">
-               <div class="service__info-item col-12 col-md-6 pt-3">
+               <div class="service__info-item col-12 col-md-6 pt-4">
                   <div class="service__info-item-first rounded-3 p-3">
 
                      <h3>Lập trình <strong>web-app</strong></h3>
@@ -360,7 +367,7 @@
                   </div>
                </div>
 
-               <div class="service__info-item col-12 col-md-6 pt-3">
+               <div class="service__info-item col-12 col-md-6 pt-4">
                   <div class="service__info-item-second rounded-3 p-3">
 
                      <h3>Lập trình <strong>di động</strong></h3>
@@ -385,7 +392,7 @@
 
             </div>
             <div class="service__info row" data-aos="fade-left">
-               <div class="service__info-item col-12 col-md-6 pt-3">
+               <div class="service__info-item col-12 col-md-6 pt-4">
                   <div class="service__info-item-third rounded-3 p-3">
                      <h3>Lập trình <strong>ứng dụng</strong></h3>
                      <div class="text-center">
@@ -408,7 +415,7 @@
                   </div>
                </div>
 
-               <div class="service__info-item col-12 col-md-6 pt-3">
+               <div class="service__info-item col-12 col-md-6 pt-4">
                   <div class="service__info-item-four rounded-3 p-3">
                      <h3>Thương mại điện tử</h3>
                      <div class="text-center">

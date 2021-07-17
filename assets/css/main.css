@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 :root{
    /* #01B3A7  */
    --primary-color: #04baad;
@@ -91,7 +91,7 @@ html {
 }
 .header__introduce-wrap img {
    zoom: 1.2;
-   margin-left: -18px;
+   /* margin-left: -18px; */
 }
 .header__introduce-wrap H1{
    line-height:  60px;
@@ -199,16 +199,27 @@ html {
 }
 
 /* ----- Carousel Slider ----- */
-#carouselExampleIndicators{
+#carouselExample{
    margin-top: var(--navbar-height);
+}
+.carousel-indicators{
+   height: 40px;
 }
 .carousel-indicators button {
    background-color: #ccc !important;
+   width: 60px !important;
+   border: 1px solid #222;
+}
+.carousel-indicators button img{
+   border: 1px solid #ccc;
+}
+.carousel-indicators .active img{
+   border: 1px solid var(--primary-color);
 }
 .carousel-inner .carousel-img {
-   height: calc(100vh - var(--navbar-height) - 84px);
-   min-height: 40vh;
+   max-height: 70vh;
 }
+
 
 .carousel-item {
    background-color: var(--header-color);
