@@ -50,11 +50,13 @@
    <!-- - Header -->
    <header>
       <!-- Header introduce -->
-      <section id="home" class="header__introduce bg-white w-100 position-fixed top-0">
+      <section id="home" class="header__introduce bg-white vw-100 position-fixed top-0">
          <div class="container h-100">
             <div class="header__introduce-wrap h-100 p-2 row">
-               <div class="header__introduce-btn d-flex d-lg-none col-md-4 col-2 align-items-center">
-                  <i class="fas fa-bars p-2" onclick="openMenu()"></i>
+               <div class=" d-flex d-lg-none col-md-4 col-2 align-items-center">
+                  <div id="header__introduce-btn" class="header__introduce-btn" onclick="openMenu()">
+                     <i class="fas fa-bars p-2"></i>
+                  </div>
                </div>
                <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-10">
 
@@ -190,7 +192,7 @@
 
    <!-- - Slider -->
    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="mb-3 d-none d-lg-block carousel-indicators">
+      <div class="mb-3 d-none d-lg-flex carousel-indicators">
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1">
             <img src="./assets/img/OdooERP.webp" class="d-block w-100" alt="he-thong-erp">

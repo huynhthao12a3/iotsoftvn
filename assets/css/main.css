@@ -200,6 +200,10 @@ html {
 
 
 /* Navbar mobile */
+.header__introduce-btn{
+   transition: transform 0.4s linear;
+
+}
 .header__introduce-btn:hover{
    cursor: pointer;
 }
@@ -208,7 +212,7 @@ html {
 }
 #nav-mobile {
    min-width:220px;
-   width: 25%;
+   width: 40%;
    height: 100vh;
    z-index: 1000;
    top: 70px;
@@ -246,6 +250,11 @@ html {
       transform: translateX(-400px);
    }
 }
+
+.transform-180{
+   transform: rotate(180deg);
+}
+
 
 
 /* --- */

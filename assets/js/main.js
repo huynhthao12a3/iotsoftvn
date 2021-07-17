@@ -61,13 +61,16 @@ for (let i = 0; i < menuItems.length; i++) {
 // nav mobile 
 var counterClick = 0;
 var navMobile = document.getElementById('nav-mobile');
+var navMobileIcon = document.getElementById('header__introduce-btn');
 function openMenu(){
      if(counterClick %2 === 0){
           navMobile.style.animation = " navMobileOpen 0.6s ease-out";
+          navMobileIcon.classList.toggle('transform-180');
           displayBlock();
      }
      else{
           navMobile.style.animation = " navMobileClose 0.6s ease-in";
+          navMobileIcon.classList.toggle('transform-180');
           setTimeout(displayBlock,600);
      }
      counterClick++;
