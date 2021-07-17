@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 :root{
    /* #01B3A7  */
-   --primary-color: #04baad;
+   --primary-color: #01B3A7;
    --foreign-color: #F4A850;
    --header-color: #3F414C;
    --animate-delay: 0.5s;
@@ -87,14 +87,16 @@ html {
 
 /* - Introduce */
 .header__introduce {
-   height: 84px;
+   height: 70px;
+   z-index: 1000;
 }
+
 .header__introduce-wrap img {
-   zoom: 1.2;
+   /* zoom: 1.2; */
    /* margin-left: -18px; */
 }
 .header__introduce-wrap H1{
-   line-height:  60px;
+   line-height:  50px;
 }
 .header__introduce-time p,
 .header__introduce-call a {
@@ -118,8 +120,6 @@ html {
    z-index: 1000;
   
 }
-
-
 
 .header__navbar.position-fixed{
    background-color: #fff !important;
@@ -197,6 +197,58 @@ html {
 .mobile-menu-btn i {
    color: #fff;
 }
+
+
+/* Navbar mobile */
+.header__introduce-btn:hover{
+   cursor: pointer;
+}
+.header__introduce-btn i{
+   font-size: 24px;
+}
+#nav-mobile {
+   min-width:220px;
+   width: 25%;
+   height: 100vh;
+   z-index: 1000;
+   top: 70px;
+   left: 0;
+   display: none;
+}
+.nav-mobile-item i {
+   font-size: 16px;
+}
+.nav-mobile-link{
+   color: #444;
+}
+.nav-mobile-link:hover{
+ color: #fff;
+ background-color: var(--primary-color);
+}
+.nav-mobile--active{
+   background-color: var(--primary-color);
+   color: #fff;
+}
+@keyframes navMobileOpen {
+   from{
+      transform: translateX(-400px);
+   }
+   to{
+      transform: translateX(0);
+   }
+}
+
+@keyframes navMobileClose {
+   from{
+      transform: translateX(0);
+   }
+   to{
+      transform: translateX(-400px);
+   }
+}
+
+
+/* --- */
 
 /* ----- Carousel Slider ----- */
 #carouselExample{

@@ -17,8 +17,20 @@
       overflow: hidden;
       border-radius: 50%;
    }
+   .header__introduce-logo{
+      justify-content: space-between;
+   }
+   .header__introduce-logo a{
+      order: 2;
+   }
+   .header__introduce-logo h1{
+      order: 1;
+   }
+}
+@media (min-width: 992px){
    
 }
+
 /* ----- xl to up ----- */
 @media (min-width: 1200px){
    .customer-wrap{

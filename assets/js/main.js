@@ -27,7 +27,7 @@ function myFunction() {
 }
 
 // ----- Navbar mobile
-
+/*
 var header = document.getElementById('navbar-fixed');
 var mobileMenu = document.getElementById('mobile-menu');
 //Đóng/Mở mobile menu
@@ -55,6 +55,25 @@ for (let i = 0; i < menuItems.length; i++) {
                header.style.height = null;
           }
      }
+} 
+*/
+
+// nav mobile 
+var counterClick = 0;
+var navMobile = document.getElementById('nav-mobile');
+function openMenu(){
+     if(counterClick %2 === 0){
+          navMobile.style.animation = " navMobileOpen 0.6s ease-out";
+          displayBlock();
+     }
+     else{
+          navMobile.style.animation = " navMobileClose 0.6s ease-in";
+          setTimeout(displayBlock,600);
+     }
+     counterClick++;
+}
+function displayBlock(){
+     navMobile.classList.toggle("d-block");
 }
 
 

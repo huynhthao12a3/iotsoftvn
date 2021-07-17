@@ -50,16 +50,21 @@
    <!-- - Header -->
    <header>
       <!-- Header introduce -->
-      <section id="home" class="header__introduce">
-         <div class="container  p-2">
-            <div class="header__introduce-wrap p-1 row">
-               <div class="d-flex col-lg-8 col-md-7  col-12">
-                  <a class="d-inline-block" href="">
-                     <img src="https://www.iotsoftvn.com/images/icons/logo-02.png" alt="logo-iot-software">
-                  </a>
-                  <h1 class="d-inline-block m-0 lora-font primary-color fs-2">IOT SOFTWARE</h1>
+      <section id="home" class="header__introduce bg-white w-100 position-fixed top-0">
+         <div class="container h-100">
+            <div class="header__introduce-wrap h-100 p-2 row">
+               <div class="header__introduce-btn d-flex d-lg-none col-md-4 col-2 align-items-center">
+                  <i class="fas fa-bars p-2" onclick="openMenu()"></i>
                </div>
-               <div class="d-none d-md-flex justify-content-around flex-wrap col-lg-4 col-md-5 ">
+               <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-10">
+
+                  <a class="d-inline-block" href="">
+                     <img src="./assets/img/logo-02.png" alt="logo-iot-software">
+                  </a>
+                  <h1 class="d-inline-block m-0 lora-font primary-color fs-2"><span class="text-secondary">IOT</span>
+                     SOFTWARE</h1>
+               </div>
+               <div class="header__introduce-info d-none d-lg-flex justify-content-around flex-wrap col-lg-4  ">
                   <div class="header__introduce-time align-self-center primary-color d-flex ">
                      <i class="far fa-clock pt-1 me-2"></i>
                      <p class="m-0 lora-font">08:00 AM — 05:00 PM </p>
@@ -77,7 +82,7 @@
    <!-- End Header -->
 
    <!-- - Navbar  -->
-   <nav id="navbar-fixed" class=" header__navbar navbar-mobile shadow-lg  ">
+   <nav id="navbar-fixed" class=" header__navbar navbar-mobile shadow-lg d-none d-lg-block ">
       <!-- - Danh mục -->
       <div class=" container-lg d-flex justify-content-between ">
          <ul class="header__navbar-list-item list-unstyled d-block d-md-flex ms-2 mb-0">
@@ -141,23 +146,60 @@
    <!--End Navbar  -->
 
    <!-- - Navbar Tablet & Mobile < 992px  -->
-   <nav id=>
+   <nav id="nav-mobile" class=" d-lg-none bg-light position-fixed">
+
+      <div class="nav-mobile-social py-3 d-flex flex-row justify-content-center">
+         <a href="#">
+            <i class="fab fa-google text-secondary m-2"></i>
+         </a>
+         <a href="#">
+            <i class="fab fa-facebook text-secondary m-2"></i>
+         </a>
+         <a href="#">
+            <i class="fab fa-facebook-messenger text-secondary m-2"></i>
+         </a>
+         <a href="#">
+            <i class="fab fa-instagram text-secondary m-2"></i>
+         </a>
+      </div>
+      <ul class="nav-mobile-list list-unstyled ">
+         <li class="nav-mobile-item">
+            <a href="#home" class="nav-mobile-link text-decoration-none d-block p-4  nav-mobile--active ">
+               <i class="fas fa-home-lg-alt me-3"></i>Trang Chủ</a>
+         </li>
+         <li class="nav-mobile-item">
+            <a href="#about" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+                  class="fas fa-question-square me-3"></i>Giới Thiệu</a>
+         </li>
+         <li class="nav-mobile-item">
+            <a href="#service" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+                  class="fas fa-handshake me-3"></i>Dịch Vụ</a>
+         </li>
+         <li class="nav-mobile-item">
+            <a href="#news" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+                  class="fas fa-newspaper me-3"></i>Tin Tức</a>
+         </li>
+         <li class="nav-mobile-item">
+            <a href="#contact" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+                  class="fas fa-id-card me-3"></i>Liên Hệ</a>
+         </li>
+      </ul>
 
    </nav>
    <!-- End Navbar Tablet & Mobile -->
 
    <!-- - Slider -->
    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="mb-3 carousel-indicators">
+      <div class="mb-3 d-none d-lg-block carousel-indicators">
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1">
-            <img src="./assets/img/OdooERP.jpeg" class="d-none d-lg-block w-100" alt="he-thong-erp">
+            <img src="./assets/img/OdooERP.webp" class="d-block w-100" alt="he-thong-erp">
          </button>
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2">
-            <img src="./assets/img/iot.jpg" class="d-none d-lg-block w-100" alt="big-data-iot">
+            <img src="./assets/img/iot.webp" class="d-block w-100" alt="big-data-iot">
          </button>
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3">
-            <img src="./assets/img/ecommere.jpg" class=" d-none d-lg-block w-100" alt="e-commerce">
+            <img src="./assets/img/ecommere.webp" class=" d-block w-100" alt="e-commerce">
          </button>
       </div>
       <div class="carousel-inner">
