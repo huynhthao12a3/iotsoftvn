@@ -13,16 +13,15 @@ var fixed = navbar.offsetTop;
 
 function myFunction() {
 
-     if (window.pageYOffset >= 84) {
-          navbar.classList.add("position-fixed")
+     if (window.pageYOffset >= 70) {
           navbar.classList.add("top-0")
-          navbar.classList.add("start-0")
-          navbar.classList.add("end-0")
+          navbar.classList.add("bg-light")
+          $('.header__navbar-link').addClass("text-dark")
      } else {
-          navbar.classList.remove("position-fixed");
           navbar.classList.remove("top-0")
-          navbar.classList.remove("start-0")
-          navbar.classList.remove("end-0")
+          navbar.classList.remove("bg-light")
+          $('.header__navbar-link').removeClass("text-dark")
+
      }
 }
 
@@ -79,12 +78,16 @@ function displayBlock(){
      navMobile.classList.toggle("d-block");
 }
 
-
+// ----- Carousel Bootstrap 
+var myCarousel = document.querySelector('#carouselExample')
+var carousel = new bootstrap.Carousel(myCarousel, {
+     interval: 3000,
+})
 // ----- Aos animation 
 AOS.init({
      duration: 1500,
      easing: 'ease-in-out',
-     once: true,
+     once: false,
      mirror: false,
      anchorPlacement: 'top-bottom',
 })

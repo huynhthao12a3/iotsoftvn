@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 :root{
    /* #01B3A7  */
-   --primary-color: #01B3A7;
-   --foreign-color: #F4A850;
+   --primary-color: #262626;
+   --foreign-color: #FED152;
    --header-color: #3F414C;
+   --footer-text-color: #d7d7d9;
    --animate-delay: 0.5s;
    --navbar-height: 70px;
 }
@@ -12,8 +13,10 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: 'Open Sans', sans-serif;
-   
+   font-family: 'Barlow Condensed', sans-serif;
+}
+body{
+   font-size: 18px;
 }
 html {
    scroll-behavior: smooth;
@@ -36,6 +39,9 @@ html {
 
 .primary-color{
    color: var(--primary-color);
+}
+.foreign-color{
+   color: var(--foreign-color);
 }
 /* Zoom Image when Hover  */
 .hov-img-zoom {
@@ -84,24 +90,22 @@ html {
 }
 
 /* ----- HEADER ----- */
-
+header{
+   z-index: 1000;
+   
+}
 /* - Introduce */
 .header__introduce {
    height: 70px;
-   z-index: 1000;
 }
 
 .header__introduce-wrap img {
    /* zoom: 1.2; */
    /* margin-left: -18px; */
 }
-.header__introduce-wrap H1{
+.header__introduce-wrap h1{
    line-height:  50px;
-}
-.header__introduce-time p,
-.header__introduce-call a {
-   color: #56567C;
-   text-decoration: none;
+   color: #fff;
 }
 .header__introduce-call a:hover {
    color: #5FC3BC;
@@ -110,28 +114,27 @@ html {
 /* - Header navbar */
 
 .header__navbar {
-   background-color: var(--header-color);
-   border-top: 2px solid var(--foreign-color);
+   border-top: 1px solid var(--foreign-color);
    width: 100%;
    /* max-width: 1200px; */
    height: var(--navbar-height);
    overflow:hidden;
-   position: absolute;
+   top: 70px;
+   left:0;
+   right: 0;
    z-index: 1000;
-  
+  background-color: transparent;
 }
 
-.header__navbar.position-fixed{
-   background-color: #fff !important;
-}
-.header__navbar.position-fixed .header__navbar-link,
-.header__navbar.position-fixed .mobile-menu-btn i {
-   color: #000 ;
-   /* text-shadow: 0 0 1px var(--foreign-color); */
-}
+
 /* text effect navbar */
 .header__navbar-link {
    position: relative;
+   font-weight: 400;
+      color: #fff;
+      border-radius: 40px;
+      line-height: var(--navbar-height);
+      text-transform: uppercase;
 }
 .header__navbar-item:hover{
    cursor: pointer;
@@ -140,9 +143,7 @@ html {
    color: #fff;
 }
 
-.position-fixed .header__navbar-item:hover .header__navbar-link{
-   color: #000;
-}
+
 
 .about__detail-btn::before,
 .header__navbar-link::before {
@@ -150,14 +151,15 @@ html {
    display: block;
    position: absolute;
    bottom: 1px;
-   left: 20%;
+   left: 15%;
    height: 2px;
-   width: 60%;
+   width: 70%;
    background-color: var(--primary-color);
    transform-origin: right top;
    transform: scale(0, 1);
    transition: color 0.5s, transform 0.3s ease-out;
 }
+
 
 .about__detail-btn:hover::before,
 .about__detail-btn:focus::before,
@@ -173,13 +175,7 @@ html {
    border:1px solid #FED152;
 }
 
-.header__navbar-link{
-   font-size: 14px;
-   color: #fff;
-   border-radius: 40px;
-   line-height: var(--navbar-height);
-   text-transform: uppercase;
-}
+
 
 .nav-active{
    background-color: var(--primary-color);
@@ -249,34 +245,34 @@ html {
 /* --- */
 
 /* ----- Carousel Slider ----- */
-#carouselExample{
-   margin-top: var(--navbar-height);
-}
+
 .carousel-indicators{
    height: 40px;
 }
 .carousel-indicators button {
    background-color: #ccc !important;
-   width: 60px !important;
+   width: 80px !important;
    border: 1px solid #222;
 }
 .carousel-indicators button img{
    border: 1px solid #ccc;
 }
 .carousel-indicators .active img{
-   border: 1px solid var(--primary-color);
-}
-.carousel-inner .carousel-img {
-   max-height: 70vh;
+   border: 1px solid var(--foreign-color);
 }
 
 
-.carousel-item {
-   background-color: var(--header-color);
+
+.carousel-item img{
+   height: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
 }
 .carousel-item h5 {
    position:absolute;
-   top: 16px;
+   top: 50vh;
+   left: 10vw;
    letter-spacing: 12px;
    font-size: 28px;
    text-shadow: 1px 1px 2px #000;
@@ -315,6 +311,24 @@ html {
 
 }
 
+
+/* ========== HOME PAGE ========== */
+
+/* ----- Banner Section*/
+#banner{
+   min-height: 600px;
+}
+.banner-item img {
+   box-shadow: 1px 3px 7px #999;
+   cursor: pointer;
+}
+.banner-item-desc p{
+   font-family: 'Roboto';
+
+}
+
+
+
 /* ----- About section ----- */
 
 /* - About title */
@@ -323,7 +337,7 @@ html {
 .project__title h2{
    font-size: 50px;
    font-family: 'Festive';
-   color: var(--primary-color);
+   color: var(--foreign-color);
 }
 
 .about__title h2::after,
@@ -340,6 +354,10 @@ html {
 
 
 /* - About description */
+.about__description-img{
+   box-shadow: 1px 3px 7px #999;
+
+}
 .about__description li i {
    color: var(--primary-color);
 }
@@ -411,7 +429,7 @@ html {
 }
 #project .swiper-slide{
    border-radius: 12px;
-   min-height: 510px;
+   min-height: 560px;
    background-color: #fff;
    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
@@ -441,7 +459,7 @@ html {
 /* Project counter */
 .project__counter i {
    font-size: 50px;
-   color: var(--primary-color);
+   color: var(--foreign-color);
 }
 
 /* ----- Customer section ----- */
@@ -607,4 +625,35 @@ html {
 #customer .swiper-slide {
    background-color: transparent;
    
+}
+
+/* ----- Footer ----- */
+#footer {
+   background-color: var(--primary-color);
+}
+.footer-social *{
+   color: #fff;
+}
+.footer-social-item {
+   background-color: #545454;
+   width: 40px;
+   height: 40px;
+}
+.footer-info *{
+   color: var(--footer-text-color);
+}
+.footer-info li p{
+   font-weight: 300;
+   line-height: 20px;
+}
+
+.footer-info h4{
+   font-weight: 300;
+}
+.footer-info li i {
+   width: 20px;
+   height: 20px;
+}
+.footer-hr {
+   color: #535353;
 }

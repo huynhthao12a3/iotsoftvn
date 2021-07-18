@@ -8,8 +8,15 @@
       width: 20px;
    }
 
-
+   /*  */
+   .carousel-item h5 {
+      font-size: 16px;
+   letter-spacing: 2px;
+   }
+   /*  */
+   
 }
+
 
 /* ----- 0 to < lg ----- */
 @media (max-width: 991.9px) {
@@ -18,10 +25,8 @@
       border-radius: 50%;
    }
    .header__introduce{
-      position: fixed;
-      top:0;
-      left: 0;
-      right:0;
+      
+      background-color: #fff;
    }
    .header__introduce-logo{
       justify-content: space-between;
@@ -32,9 +37,25 @@
    .header__introduce-logo h1{
       order: 1;
    }
+   .header__introduce-wrap h1{
+      color: var(--primary-color);
+   }
+   /*  */
+   .carousel-item img{
+      height: 50vh;
+   }
+   .carousel-item h5{
+      top: 25vh;
+   }
 }
 @media (min-width: 992px){
    
+}
+/* ----- md to up ----- */
+@media (min-width:768px){
+   .footer-info h4{
+      margin-top: -8px;
+   }
 }
 
 /* ----- xl to up ----- */
