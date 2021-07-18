@@ -17,6 +17,12 @@
       overflow: hidden;
       border-radius: 50%;
    }
+   .header__introduce{
+      position: fixed;
+      top:0;
+      left: 0;
+      right:0;
+   }
    .header__introduce-logo{
       justify-content: space-between;
    }

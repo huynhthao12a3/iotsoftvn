@@ -186,17 +186,6 @@ html {
    color: #fff !important;
 }
 
-/* - Mobile menu */
-.mobile-menu-btn{
-   line-height: var(--navbar-height);
-   height:var(--navbar-height);
-}
-.mobile-menu-btn:hover {
-   background-color: var(--primary-color);
-}
-.mobile-menu-btn i {
-   color: #fff;
-}
 
 
 /* Navbar mobile */
