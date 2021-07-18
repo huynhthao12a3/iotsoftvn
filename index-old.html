@@ -19,9 +19,7 @@
    <!-- Open-Sans Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -50,33 +48,34 @@
    </div>
 
    <!-- - Header -->
-   <header class="position-fixed top-0 vw-100  bg-transparent">
+   <header>
       <!-- Header introduce -->
-      <section class="header__introduce vw-100 ">
+      <section id="home" class="header__introduce bg-white vw-100 ">
          <div class="container h-100">
             <div class="header__introduce-wrap h-100 p-2 row">
-               <div class=" d-flex d-lg-none col-md-4 col-3 align-items-center">
+               <div class=" d-flex d-lg-none col-md-4 col-2 align-items-center">
                   <div id="header__introduce-btn" class="header__introduce-btn" onclick="openMenu()">
                      <i class="fas fa-bars p-2"></i>
                   </div>
                </div>
-               <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-9">
+               <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-10">
 
-                  <a class="d-inline-block" href="#">
+                  <a class="d-inline-block" href="">
                      <img src="./assets/img/logo-02.png" alt="logo-iot-software">
                   </a>
-                  <h1 class="d-inline-block m-0 ps-lg-3 fs-2">IOT
+                  <h1 class="d-inline-block m-0 ps-lg-3 lora-font primary-color fs-2"><span
+                        class="text-secondary">IOT</span>
                      SOFTWARE</h1>
                </div>
-               <div class="header__introduce-info d-none d-lg-flex justify-content-between flex-wrap col-lg-4  ">
-                  <div class="header__introduce-time text-light align-self-center  d-flex ">
+               <div class="header__introduce-info d-none d-lg-flex justify-content-around flex-wrap col-lg-4  ">
+                  <div class="header__introduce-time align-self-center primary-color d-flex ">
                      <i class="far fa-clock pt-1 me-2"></i>
-                     <p class="m-0 lora-font ">08:00 AM — 05:00 PM </p>
+                     <p class="m-0 lora-font">08:00 AM — 05:00 PM </p>
                   </div>
 
-                  <div class="header__introduce-call text-light align-self-center  d-flex">
+                  <div class="header__introduce-call align-self-center primary-color d-flex">
                      <i class="fas fa-phone-square-alt pt-1 me-2"></i>
-                     <a class="lora-font text-decoration-none text-light" href="tel:+84978938760">097 893 87 60</a>
+                     <a class="lora-font " href="tel:+84978938760">097 893 87 60</a>
                   </div>
                </div>
             </div>
@@ -86,30 +85,35 @@
    <!-- End Header -->
 
    <!-- - Navbar  -->
-   <nav id="navbar-fixed" class=" header__navbar position-fixed shadow-lg d-none d-lg-block ">
+   <nav id="navbar-fixed" class=" header__navbar navbar-mobile shadow-lg d-none d-lg-block ">
       <!-- - Danh mục -->
       <div class=" container-lg d-flex justify-content-between ">
          <ul class="header__navbar-list-item list-unstyled d-block d-md-flex ms-2 mb-0">
             <li class=" header__navbar-item   ">
-               <a class="home header__navbar-link  text-decoration-none mx-1 py-2 px-sm-3 px-5    nav-active "
-                  href="#">TRANG CHỦ</a>
+               <a class="home header__navbar-link  text-decoration-none mx-1 py-2 px-sm-3 px-5  fw-bold  nav-active "
+                  href="#">Trang Chủ</a>
             </li>
             <li class=" header__navbar-item    ">
-               <a class="about header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5   " href="#about">GIỚI
-                  THIỆU</a>
+               <a class="about header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
+                  href="#about">Giới
+                  Thiệu</a>
             </li>
             <li class=" header__navbar-item   ">
-               <a class="service header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5   "
+               <a class="service header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
                   href="#service">Dịch
                   Vụ</a>
             </li>
-
             <li class=" header__navbar-item   ">
-               <a class="news header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5    " href="#news">Tin
+               <a class="project header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
+                  href="#project">Dự Án</a>
+            </li>
+            <li class=" header__navbar-item   ">
+               <a class="news header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold   "
+                  href="#news">Tin
                   Tức</a>
             </li>
             <li class=" header__navbar-item   ">
-               <a class="contact header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5   "
+               <a class="contact header__navbar-link text-decoration-none mx-1 py-2 px-sm-3 px-5 fw-bold  "
                   href="#contact">Liên
                   Hệ</a>
             </li>
@@ -163,7 +167,7 @@
                <i class="fas fa-home-lg-alt me-3"></i>Trang Chủ</a>
          </li>
          <li class="nav-mobile-item">
-            <a href="./index-old.html" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+            <a href="#about" class="nav-mobile-link text-decoration-none d-block p-4  "><i
                   class="fas fa-question-square me-3"></i>Giới Thiệu</a>
          </li>
          <li class="nav-mobile-item">
@@ -185,154 +189,128 @@
 
    <!-- - Slider -->
    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="mb-3 d-none d-md-flex carousel-indicators">
+      <div class="mb-3 d-none d-lg-flex carousel-indicators">
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1">
-            <img src="./assets/img/home/banner13.jpg" class="d-block w-100" alt="he-thong-erp">
+            <img src="./assets/img/erp.webp" class="d-block w-100" alt="he-thong-erp">
          </button>
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2">
-            <img src="./assets/img/home/banner12.png" class="d-block w-100" alt="big-data-iot">
+            <img src="./assets/img/iot.webp" class="d-block w-100" alt="big-data-iot">
          </button>
          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3">
-            <img src="./assets/img/home/banner14.jpg" class=" d-block w-100" alt="e-commerce">
+            <img src="./assets/img/ecommere.webp" class=" d-block w-100" alt="e-commerce">
          </button>
       </div>
       <div class="carousel-inner">
-         <div class="carousel-item   active">
-            <div class=" ">
-               <h5 class=" w-100 text-light animate__animated animate__fadeInLeft animate__delay-1s ">
-                  LẬP TRÌNH ỨNG DỤNG
+         <div class="carousel-item  active">
+            <div class="d-none d-lg-block ">
+               <h5 class=" w-100 text-center text-light animate__animated animate__fadeInDown animate__delay-1s ">
+                  QUẢN TRỊ
+                  DOANH
+                  NGHIỆP ERP ODOO
                </h5>
             </div>
-            <img src="./assets/img/home/banner13.jpg" class="carousel-img d-block vw-100  " alt="he-thong-erp">
+            <img src="./assets/img/erp.webp" class="carousel-img d-block w-100" alt="he-thong-erp">
          </div>
 
-         <div class="carousel-item ">
-            <div class=" ">
-               <h5 class=" w-100 text-light  animate__animated animate__fadeInLeft animate__delay-1s ">
-                  HỆ THỐNG THƯƠNG
+         <div class="carousel-item">
+            <div class="d-none d-lg-block ">
+               <h5 class=" w-100 text-center text-light  animate__animated animate__fadeInDown animate__delay-1s ">
+                  HỆ
+                  THỐNG PHẦN MỀM IOT
+               </h5>
+            </div>
+            <img src="./assets/img/iot.webp" class="carousel-img d-block w-100" alt="big-data-iot">
+         </div>
+
+         <div class="carousel-item">
+            <div class="d-none d-lg-block ">
+               <h5 class=" w-100 text-center text-light animate__animated animate__fadeInDown animate__delay-1s ">HỆ
+                  THỐNG THƯƠNG
                   MẠI ĐIỆN
                   TỬ
                </h5>
             </div>
-            <img src="./assets/img/home/banner12.png" class="carousel-img d-block vw-100  " alt="big-data-iot">
-         </div>
-
-         <div class="carousel-item ">
-            <div class=" ">
-               <h5 class=" w-100 text-light animate__animated animate__fadeInLeft animate__delay-1s ">
-                  LẬP TRÌNH WEBSITE
-               </h5>
-            </div>
-            <img src="./assets/img/home/banner14.jpg" class="carousel-img d-block vw-100  " alt="e-commerce">
+            <img src="./assets/img/ecommere.webp" class="carousel-img d-block w-100" alt="e-commerce">
          </div>
       </div>
-      <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExample"
-         data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
          <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#carouselExample"
-         data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
          <span class="carousel-control-next-icon" aria-hidden="true"></span>
          <span class="visually-hidden">Next</span>
       </button>
    </div>
    <!-- End Slider  -->
 
-   <main id="home-page">
-
-      <section id="banner" class="py-5 d-flex align-items-center">
-         <div class="container">
-            <h2 class="fs-1 mb-3 mb-lg-4 text-center text-secondary" data-aos="fade-down">Công ty thiết kế phần mềm,
-               website
-               <br><span class="foreign-color">IOT SOFTWARE</span><br> <strong>Uy Tín
-                  - Chuyên Nghiệp</strong>
-            </h2>
-
-            <div class="row justify-content-center banner-list" data-aos="fade-up">
-               <div class="banner-item col-12 col-md-6 col-lg-4 p-3  ">
-                  <div class="d-block ">
-                     <img class="img-fluid rounded" src="./assets/img/home/banner9.jpg" alt="">
-                  </div>
-                  <div class="banner-item-desc mt-2 text-secondary d-flex justify-content-center align-items-center">
-
-                     <i class="fad fa-chevron-double-right"></i>
-                     <p class=" fs-4 text-center m-0 px-2">PHẦN MỀM</p>
-                     <i class="fad fa-chevron-double-left"></i>
-                  </div>
-               </div>
-
-               <div class="banner-item col-12 col-md-6 col-lg-4 p-3  ">
-                  <div class="d-block ">
-                     <img class="img-fluid rounded" src="./assets/img/home/banner7.jpg" alt="">
-                  </div>
-                  <div class="banner-item-desc mt-2 text-secondary d-flex justify-content-center align-items-center">
-
-                     <i class="fad fa-chevron-double-right"></i>
-                     <p class=" fs-4 text-center m-0 px-2">WEBSITE</p>
-                     <i class="fad fa-chevron-double-left"></i>
-                  </div>
-
-               </div>
-
-               <div class="banner-item col-12 col-md-6 col-lg-4 p-3  ">
-                  <div class="d-block ">
-                     <img class="img-fluid rounded" src="./assets/img/home/banner8.jpg" alt="">
-                  </div>
-                  <div class="banner-item-desc mt-2 text-secondary d-flex justify-content-center align-items-center">
-
-                     <i class="fad fa-chevron-double-right"></i>
-                     <p class=" fs-4 text-center m-0 px-2">IOT</p>
-                     <i class="fad fa-chevron-double-left"></i>
-                  </div>
-
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--  -->
+   <main>
       <!-- - About section -->
       <section id="about" class=" d-flex justify-content-center pt-100 pb-100">
          <div class="container">
             <div class="about__title " data-aos="fade-right">
                <h2>Giới Thiệu</h2>
-               <p class=" fw-bold display-6">IOT SOFWARE VN</p>
+               <p class=" fw-bold display-6">IOT SOFWARE</p>
             </div>
 
             <!-- About description  -->
             <div class="about__description row ">
                <div class="col-lg-5" data-aos="fade-right">
-                  <p class="lh-lg  mb-lg-0 mb-xl-4">
+                  <p class="lh-lg">
                      &nbsp;Được thành lập bởi các chuyên gia với nhiều
                      năm kinh nghiệm đáp ứng nhu cầu về lĩnh vực CNTT, IoT, AI, Computer Vision, Big Data, APP...
                   </p>
                   <ul class="list-unstyled">
-                     <li class="mb-3 mb-xl-4"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB
-                        - IOT -
+                     <li class="mb-3"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB - IOT -
                         ERP
                         -
                         E-COMMERCE.
                      </li>
-                     <li class="mb-3 mb-xl-4"><i class="fas fa-check-double me-2"></i>Chúng tôi ứng dụng Agile/Scrum
-                        trong quá
+                     <li class="mb-3"><i class="fas fa-check-double me-2"></i>Chúng tôi ứng dụng Agile/Scrum trong quá
                         trình phát triển
                         ứng
                         dụng.</li>
-                     <li class="mb-3 mb-xl-4"><i class="fas fa-check-double me-2"></i>Công nghệ của chúng tôi sẽ giúp
-                        khách hàng
+                     <li class="mb-3"><i class="fas fa-check-double me-2"></i>Công nghệ của chúng tôi sẽ giúp khách hàng
                         tối ưu hóa lợi
                         nhuận trong kinh doanh.</li>
                   </ul>
                </div>
-               <div class="col-lg-6 offset-lg-1 pt-4 pt-lg-0" data-aos="fade-left">
-                  <img src="./assets/img/home/scrum.png"
-                     alt="ung-dung-quy-trinh-scrum-trong-qua-trinh-phat-trien-ung-dung"
-                     class="about__description-img img-fluid rounded">
+               <div class="col-lg-6 offset-lg-1 pt-4 pt-lg-0" data-aos="fade-right">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <p class="lh-lg">
+                           &nbsp;Với những thế mạnh từ việc tiếp nhận các hợp đồng dịch vụ lớn với các đối tác là Cơ
+                           quan, các
+                           Doanh
+                           nghiệp kinh doanh sản xuất, thương mại.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <p class="lh-lg">
+                           &nbsp;Cùng với đó, đội ngũ nhân viên của chúng tôi đã được
+                           tiếp cận
+                           với công nghệ tiên tiến và học hỏi được những kiến thức cùng kinh nghiệm nghiệp vụ của Khách
+                           hàng để
+                           củng cố sức mạnh của chính mình.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <p class="lh-lg">
+                           &nbsp;IOT SOFT Việt Nam đã tiên phong phát triển nguồn nhân sự chất lượng cao, nâng cao năng
+                           lực cá
+                           nhân, với tiêu chí: <em>"Mỗi nhân viên là một nhân tài"</em>.
+                        </p>
+                     </div>
+                  </div>
 
                </div>
             </div>
-            <div class="sologan row mt-5" data-aos="fade-up">
+            <div class="sologan row mt-4" data-aos="fade-up">
                <div class="col-lg-12">
                   <blockquote class="blockquote">
                      <p class="text-center fst-italic">
@@ -347,6 +325,49 @@
                </div>
             </div>
 
+            <!-- About detail  -->
+            <div class="about__detail row pt-50">
+               <div class=" col-12 col-xl-4 col-lg-5 text-center pb-lg-0 pb-5" data-aos="fade-right">
+                  <img class="img-thumbnail " src="./assets/img/building.webp" alt="building">
+               </div>
+               <div class="col-12 col-xl-8 col-lg-7" data-aos="fade-right">
+                  <p class="fw-bold fs-1 text-center">IOT SOFTWARE VN</p>
+                  <ul class="about__detail-list list-unstyled d-flex justify-content-around">
+                     <li class="about__detail-item mx-sm-4">
+                        <button id="btn-active" class="about__detail-btn about__detail-btn--active text-uppercase p-2 "
+                           onclick="ButtonInfo()">Thông Tin</button>
+                     </li>
+                     <li class="about__detail-item mx-sm-4">
+                        <button class="about__detail-btn text-uppercase p-2" onclick="ButtonVision()">Tầm Nhìn</button>
+                     </li>
+                     <li class="about__detail-item mx-sm-4">
+                        <button class="about__detail-btn text-uppercase p-2" onclick="ButtonMission()">Sứ Mạng</button>
+                     </li>
+
+                  </ul>
+                  <div class="about__detail-para text-center ">
+
+                     <p id="about__detail-para-item1" class="my-2">
+                        <strong> Tên Đơn vị: </strong> Công ty TNHH Giải pháp Công nghệ Phần mềm kết nối số Việt Nam IOT
+                        Software
+                     </p>
+                     <i class="fal fa-waveform-path"></i><i class="fal fa-waveform-path"></i><i
+                        class="fal fa-waveform-path"></i>
+                     <p id="about__detail-para-item2" class="my-2">
+                        <strong>Tên tiếng Anh: </strong> Vietnam Digital Connection
+                        Software
+                        Solutions Co.,
+                        Ltd. IOT
+                        Software
+                     </p>
+                     <i class="fal fa-waveform-path"></i><i class="fal fa-waveform-path"></i><i
+                        class="fal fa-waveform-path"></i>
+                     <p id="about__detail-para-item3" class="my-2">
+                        <strong>Tên viết tắt: </strong> IOT SOFTWARE VN
+                     </p>
+                  </div>
+               </div>
+            </div>
 
          </div>
       </section>
@@ -377,7 +398,7 @@
                      <ul class="d-none d-lg-block list-unstyled">
                         <li><i class="far fa-hand-point-right me-1"></i>Quản lý tài nguyên tập trung, tìm kiếm nhanh
                            chóng.</li>
-                        <li><i class="far fa-hand-point-right me-1"></i>Chạy trên nền tảng website, trên mọi
+                        <li><i class="far fa-hand-point-right me-1"></i>Chạy trên nền tảng website, sử dụng trên mọi
                            thiết bị có internet và web
                            browser.</li>
                         <li><i class="far fa-hand-point-right me-1"></i>Phân quyền sử dụng tối ưu, mỗi nhân viên chỉ
@@ -397,7 +418,7 @@
                      <p>&nbsp;Lập trình di động IOS/Android theo các công nghệ di động mới nhất từng
                         thời điểm. Đáp ứng được
                         những yêu cầu kĩ thuật cao cấp mà website bị giới hạn. Việc sở hữu một ứng dụng smartphone hoàn
-                        chỉnh giúp tổ chức, doanh nghiệp chiếm được nhiều thiện cảm hơn trong mắt khách hàng.</p>
+                        chỉnh giúp doanh nghiệp chiếm được nhiều thiện cảm trong mắt khách hàng.</p>
                      <ul class="d-none d-lg-block list-unstyled">
                         <li><i class="far fa-hand-point-right me-1"></i>Tư vấn thiết kế UI/UX.</li>
                         <li><i class="far fa-hand-point-right me-1"></i>Trọn gói từ website/web-service (quản lý) IOS và
@@ -419,7 +440,7 @@
                         <img class="img-fluid" src="./assets/img/lap-trinh-ung-dung.webp" alt="Lap-trinh-di-dong">
                      </div>
                      <p>&nbsp;Với đội ngũ chuyên gia phần mềm có trình
-                        độ cao và dày dạn kinh nghiệm, IOT SOFTWARE tự
+                        độ cao và dày dạn kinh nghiệm, IOT SOFT tự
                         hào là một tổ chức có thể cung cấp các dịch vụ với chất lượng cao, đủ để đáp ứng những nhu
                         cầu phức tạp nhất, những đòi hỏi khắt khe nhất về chất lượng sản phẩm.</p>
                      <ul class="d-none d-lg-block list-unstyled">
@@ -430,7 +451,7 @@
                            đơn vị, tổ chức.</li>
                         <li><i class="far fa-hand-point-right me-1"></i>Xây dựng hệ thống các phần mềm hỗ trợ nhằm nâng
                            cao
-                           công tác quản lý doanh nghiệp.</li>
+                           công tác quản lý và phục vụ của các tổ chức, doanh nghiệp.</li>
                      </ul>
                   </div>
                </div>
@@ -463,7 +484,7 @@
 
 
       <!-- - Project section -->
-      <section id="project" class="pt-100 pb-100 position-relative">
+      <section id="project" class="pt-100 pb-50 position-relative">
          <div class="container">
             <div class="project__title" data-aos="fade-right">
                <h2 class="text-center">Dự Án Tiêu Biểu</h2>
@@ -649,62 +670,178 @@
       </section>
       <!-- End Project section -->
 
-   </main>
-   <!-- --- Footer -->
-   <footer id="footer" class="pt-100 pb-50">
-      <div class="container">
-         <div class="row">
-            <div class="footer-image col-12 col-md-3  d-flex flex-column align-items-center">
-               <img src="./assets/img/logo-iotsoft-footer.jpg" width=90 alt="iot-software-vn">
-               <div class="footer-social">
-                  <div class="d-flex flex-wrap ">
-                     <a href="#"
-                        class="footer-social-item me-2 my-3 d-flex align-items-center  justify-content-center text-decoration-none  rounded"><i
-                           class="fab fa-google "></i></a>
-                     <a href="#"
-                        class="footer-social-item me-2 my-3 d-flex align-items-center  justify-content-center text-decoration-none  rounded"><i
-                           class="fab fa-facebook-f"></i></a>
-                     <a href="#"
-                        class="footer-social-item me-2 my-3 d-flex align-items-center  justify-content-center text-decoration-none  rounded"><i
-                           class="fab fa-instagram"></i></a>
+
+
+      <!-- end cont stats -->
+      <section id="customer" class="pt-50 pb-50 position-relative">
+         <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+         </div>
+         <div class="customer__title text-center">
+            <h2 class="fs-1">Tỉ Lệ Hài Lòng Tuyệt Đối</h2>
+            <div class="customer__tittle-star text-warning fs-2">
+               <i class="fad fa-star"></i>
+               <i class="fad fa-star"></i>
+               <i class="fad fa-star"></i>
+               <i class="fad fa-star"></i>
+               <i class="fad fa-star"></i>
+            </div>
+            <div class="customer__title-desc fs-5 fw-bolder my-2">
+               <p>IOT Software sẽ đạt mốc 500 khách hàng và 700 dự án đã hoàn thành trong năm 2021.</p>
+               <p>Kể từ khi hoạt động, những dự án chủ yếu của IOT Software đều do các khách hàng tin tưởng giới thiệu.
+               </p>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class=" customer-wrap position-relative mx-auto">
+               <div class="customer-list" id="bubble-tag-cloud">
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/cong-ty-moi-truong-sonadezi.webp"
+                        alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/damri.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ford-phu-my.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/sonadezi.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/taekwang.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/truong-cao-dang-y-te-dong-nai.webp"
+                        alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ubnd-long-thanh.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/vinimex.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ats.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/casumina.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/cp-group.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/central-park-hotel.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/cong-ty-moi-truong-sonadezi.webp"
+                        alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/damri.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ford-phu-my.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/sonadezi.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/taekwang.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/truong-cao-dang-y-te-dong-nai.webp"
+                        alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ubnd-long-thanh.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/vinimex.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/ats.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/casumina.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/cp-group.webp" alt="khach-hang-cua-iot-software">
+                  </div>
+                  <div class="customer-item ">
+                     <img src="./assets/img/khachhang/central-park-hotel.webp" alt="khach-hang-cua-iot-software">
                   </div>
                </div>
             </div>
-            <div class="footer-info mt-3 mt-md-0 col-12 col-md-6">
-               <h4 class="mb-3  lh-base text-center">CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ PHẦN MỀM KẾT NỐI SỐ VIỆT NAM
-               </h4>
-               <hr>
-               <ul class="list-unstyled">
-                  <li class="d-flex">
-                     <i class="fas fa-money-check-edit-alt"></i>
-                     <p class="ms-3">Mã Số Thuế : 3603552207</p>
-                  </li>
-                  <li class="d-flex">
-                     <i class="fas fa-map-marker-alt"></i>
-                     <p class="ms-3">Trụ Sở Công ty : 9/9 Tổ 18C, Khu phố 3, Phường Bửu Long,
-                        TP. Biên
-                        Hòa, Đồng Nai.</p>
-                  </li>
-                  <li class="d-flex">
-                     <i class="fas fa-phone"></i>
-                     <p class="ms-3">097 893 87 60</p>
-                  </li>
-                  <li class="d-flex">
-                     <i class="fas fa-envelope"></i>
-                     <p class="ms-3">info@iotsoftvn.com</p>
-                  </li>
-               </ul>
+         </div>
+         <div class="container">
+            <div class="customer__slide ">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide rounded px-lg-5 p-3">
+                     <h3 class="text-center fs-2">Nguyễn Du</h3>
+                     <p class="text-center"><i class="fal fa-building me-2"></i><em>Ford Phú Mỹ</em></p>
+                     <p class="text-center fs-5">" Hơn cả chất lượng, IOT Software đã giúp mình hệ thống lại ý tưởng,
+                        phát
+                        triển
+                        thiết kế, phát
+                        triển
+                        giao
+                        diện trải nghiệm người dùng, tư vấn chiến lược xây dựng thương hiệu, trainning cách sử dụng cho
+                        nhân viên mình. Khuyên dùng dịch vụ
+                        của anh Việt vào các dự án quan trọng của bạn. "</p>
+                  </div>
+
+                  <div class="swiper-slide rounded px-lg-5 p-3">
+                     <h3 class="text-center fs-2">Mr Thomas Edison</h3>
+                     <p class="text-center"><i class="fal fa-building me-2"></i><em>Central Park Hotel</em></p>
+                     <p class="text-center fs-5">"More than quality, IOT Software has helped me systematize ideas,
+                        develop
+                        designs, develop user-experience interfaces, advise on branding strategies, and train employees
+                        on
+                        usage. Use Mr. Viet's services on your important projects."</p>
+                  </div>
+
+                  <div class="swiper-slide rounded px-lg-5 p-3">
+                     <h3 class="text-center fs-2">Phan Văn Đức</h3>
+                     <p class="text-center"><i class="fal fa-building me-2"></i><em>Sonadezi</em></p>
+                     <p class="text-center fs-5">" Mặc dù tôi phải đi công tác liên tục, không có thời gian mô tả kĩ
+                        lưỡng nhưng bên IOT Software đã chủ động thực hiện dự án vượt xa mong đợi. Tôi đánh giá cao về
+                        cách làm việc chú trọng về kết quả chứ không mất thời gian tranh cãi và làm khó dễ chúng tôi mặc
+                        dù tôi thay đổi idea liên tục. Sẽ tiếp tục cộng tác với IOT Software cho các dự án khác nữa. "
+                     </p>
+                  </div>
+
+               </div>
+               <!-- <div class="swiper-pagination position-relative mt-4"></div> -->
+
             </div>
-            <div class="col-12 col-md-3"></div>
          </div>
-         <hr class="footer-hr">
-         <div class="footer-copy-right text-light text-center">
-            IOT SOFTWARE VN © All Rights Are Reserved 2021 <a class="d-block text-decoration-none foreign-color"
-               href="https://www.iotsoftvn.com/">www.iotsoftvn.com</a>
-         </div>
-      </div>
+
+      </section>
+      <!-- - News section -->
+      <section id="news" class="d-flex justify-content-center pt-100 pb-50">tin tuc</section>
+      <!-- News service section -->
+
+      <!-- - Contact section -->
+      <section id="contact" class="d-flex justify-content-center pt-100 pb-50">lien he</section>
+      <!-- End Contact section -->
+   </main>
+   <!-- --- Footer -->
+   <footer>
+
    </footer>
-   <!-- End Footer -->
+
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
    <script src="./assets/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
