@@ -6,21 +6,23 @@ function loadingFunction() {
 };
 
 // ----- Navbar position fixed top 
-window.onscroll = function () { myFunction() };
+document.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("navbar-fixed")
 var fixed = navbar.offsetTop;
-
+var header = document.getElementById('header__introduce');
 function myFunction() {
 
-     if (window.pageYOffset >= 70) {
+     if (window.pageYOffset >= 71 && window.innerWidth >= 992) {
           navbar.classList.add("top-0")
           navbar.classList.add("bg-light")
           $('.header__navbar-link').addClass("text-dark")
+          header.classList.add('d-none')
      } else {
           navbar.classList.remove("top-0")
           navbar.classList.remove("bg-light")
           $('.header__navbar-link').removeClass("text-dark")
+          header.classList.remove('d-none')
 
      }
 }
@@ -93,28 +95,28 @@ AOS.init({
 })
 
 // ----- Highlight scroll to section
-const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('nav .header__navbar-list-item li a');
+// const sections = document.querySelectorAll('section');
+// const navLi = document.querySelectorAll('nav .header__navbar-list-item li a');
 
-const heightHeader = $('#home').outerHeight();
-const heightHeaderNavFix = $('.header__navbar').outerHeight();
+// const heightHeader = $('#home').outerHeight();
+// const heightHeaderNavFix = $('.header__navbar').outerHeight();
 
-window.addEventListener('scroll', () => {
-     let current = '';
+// window.addEventListener('scroll', () => {
+//      let current = '';
 
-     sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          if (pageYOffset >= (sectionTop - heightHeaderNavFix)) {
-               current = section.getAttribute('id');
-          }
-     })
-     navLi.forEach(li => {
-          li.classList.remove('nav-active');
-          if (li.classList.contains(current)) {
-               li.classList.add('nav-active');
-          }
-     })
-})
+//      sections.forEach(section => {
+//           const sectionTop = section.offsetTop;
+//           if (pageYOffset >= (sectionTop - heightHeaderNavFix)) {
+//                current = section.getAttribute('id');
+//           }
+//      })
+//      navLi.forEach(li => {
+//           li.classList.remove('nav-active');
+//           if (li.classList.contains(current)) {
+//                li.classList.add('nav-active');
+//           }
+//      })
+// })
 
 // ----- About detail Click
 function ButtonInfo() 

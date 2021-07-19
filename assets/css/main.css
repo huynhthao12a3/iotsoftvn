@@ -17,6 +17,7 @@
 }
 body{
    font-size: 18px;
+   overflow: hidden;
 }
 html {
    scroll-behavior: smooth;
@@ -90,10 +91,7 @@ html {
 }
 
 /* ----- HEADER ----- */
-header{
-   z-index: 1000;
-   
-}
+
 /* - Introduce */
 .header__introduce {
    height: 70px;

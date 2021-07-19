@@ -50,38 +50,37 @@
    </div>
 
    <!-- - Header -->
-   <header class="position-fixed top-0 vw-100  bg-transparent">
+   <header id="header__introduce" class="fixed-top header__introduce">
       <!-- Header introduce -->
-      <section class="header__introduce vw-100 ">
-         <div class="container h-100">
-            <div class="header__introduce-wrap h-100 p-2 row">
-               <div class=" d-flex d-lg-none col-md-4 col-3 align-items-center">
-                  <div id="header__introduce-btn" class="header__introduce-btn" onclick="openMenu()">
-                     <i class="fas fa-bars p-2"></i>
-                  </div>
+      <div class="container h-100">
+         <div class="header__introduce-wrap h-100 p-2 d-flex">
+            <div class=" d-flex d-lg-none col-md-4 col-3 align-items-center">
+               <div id="header__introduce-btn" class="header__introduce-btn" onclick="openMenu()">
+                  <i class="fas fa-bars p-2"></i>
                </div>
-               <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-9">
+            </div>
+            <div class="header__introduce-logo d-flex col-lg-8 col-md-8 col-9">
 
-                  <a class="d-inline-block" href="#">
-                     <img src="./assets/img/logo-02.png" alt="logo-iot-software">
-                  </a>
-                  <h1 class="d-inline-block m-0 ps-lg-3 fs-2">IOT
-                     SOFTWARE</h1>
+               <a class="d-inline-block" href="#">
+                  <img src="./assets/img/logo-02.png" alt="logo-iot-software">
+               </a>
+               <h1 class="d-inline-block m-0 ps-lg-3 fs-2">IOT
+                  SOFTWARE</h1>
+            </div>
+            <div class="header__introduce-info d-none d-lg-flex justify-content-between flex-wrap col-lg-4  ">
+               <div class="header__introduce-time text-light align-self-center  d-flex ">
+                  <i class="far fa-clock pt-1 me-2"></i>
+                  <p class="m-0 lora-font ">08:00 AM — 05:00 PM </p>
                </div>
-               <div class="header__introduce-info d-none d-lg-flex justify-content-between flex-wrap col-lg-4  ">
-                  <div class="header__introduce-time text-light align-self-center  d-flex ">
-                     <i class="far fa-clock pt-1 me-2"></i>
-                     <p class="m-0 lora-font ">08:00 AM — 05:00 PM </p>
-                  </div>
 
-                  <div class="header__introduce-call text-light align-self-center  d-flex">
-                     <i class="fas fa-phone-square-alt pt-1 me-2"></i>
-                     <a class="lora-font text-decoration-none text-light" href="tel:+84978938760">097 893 87 60</a>
-                  </div>
+               <div class="header__introduce-call text-light align-self-center  d-flex">
+                  <i class="fas fa-phone-square-alt pt-1 me-2"></i>
+                  <a class="lora-font text-decoration-none text-light" href="tel:+84978938760">097 893 87 60</a>
                </div>
             </div>
          </div>
-      </section>
+      </div>
+
    </header>
    <!-- End Header -->
 
@@ -309,7 +308,8 @@
                      năm kinh nghiệm đáp ứng nhu cầu về lĩnh vực CNTT, IoT, AI, Computer Vision, Big Data, APP...
                   </p>
                   <ul class="list-unstyled">
-                     <li class="mb-3 mb-xl-4"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP - WEB
+                     <li class="mb-3 mb-xl-4"><i class="fas fa-check-double me-2"></i>Thế mạnh của chúng tôi: APP -
+                        WEB
                         - IOT -
                         ERP
                         -
@@ -370,9 +370,11 @@
                      <p>&nbsp;Chúng tôi không bán phần mềm, tại IOT Software chúng tôi thiết kế và lập trình web app
                         theo nhu
                         cầu
-                        riêng cho doanh nghiệp. Web-app tại IOT Software là giải pháp những vấn đề tồn đọng, tối ưu mô
+                        riêng cho doanh nghiệp. Web-app tại IOT Software là giải pháp những vấn đề tồn đọng, tối ưu
+                        mô
                         hình
-                        kinh doanh hiện tại, tuyệt đối dễ dàng sử dụng mà không cần training nhân viên, report/báo cáo
+                        kinh doanh hiện tại, tuyệt đối dễ dàng sử dụng mà không cần training nhân viên, report/báo
+                        cáo
                         mọi
                         vấn đề.</p>
                      <ul class="d-none d-lg-block list-unstyled">
@@ -397,11 +399,13 @@
                      </div>
                      <p>&nbsp;Lập trình di động IOS/Android theo các công nghệ di động mới nhất từng
                         thời điểm. Đáp ứng được
-                        những yêu cầu kĩ thuật cao cấp mà website bị giới hạn. Việc sở hữu một ứng dụng smartphone hoàn
+                        những yêu cầu kĩ thuật cao cấp mà website bị giới hạn. Việc sở hữu một ứng dụng smartphone
+                        hoàn
                         chỉnh giúp tổ chức, doanh nghiệp chiếm được nhiều thiện cảm hơn trong mắt khách hàng.</p>
                      <ul class="d-none d-lg-block list-unstyled">
                         <li><i class="far fa-hand-point-right me-1"></i>Tư vấn thiết kế UI/UX.</li>
-                        <li><i class="far fa-hand-point-right me-1"></i>Trọn gói từ website/web-service (quản lý) IOS và
+                        <li><i class="far fa-hand-point-right me-1"></i>Trọn gói từ website/web-service (quản lý) IOS
+                           và
                            Android.</li>
                         <li><i class="far fa-hand-point-right me-1"></i>Chúng tôi đáp ứng mọi yêu cầu về tiến độ hoàn
                            thành của sản phẩm theo đúng tiêu chuẩn của
@@ -426,10 +430,12 @@
                      <ul class="d-none d-lg-block list-unstyled">
                         <li><i class="far fa-hand-point-right me-1"></i>Triển khai, đào tạo các phần mềm cho các
                            tổ chức, doanh nghiệp.</li>
-                        <li><i class="far fa-hand-point-right me-1"></i>Phân tích, thiết kế các hệ thống thông tin phục
+                        <li><i class="far fa-hand-point-right me-1"></i>Phân tích, thiết kế các hệ thống thông tin
+                           phục
                            vụ công tác tin học hóa theo yêu cầu của các
                            đơn vị, tổ chức.</li>
-                        <li><i class="far fa-hand-point-right me-1"></i>Xây dựng hệ thống các phần mềm hỗ trợ nhằm nâng
+                        <li><i class="far fa-hand-point-right me-1"></i>Xây dựng hệ thống các phần mềm hỗ trợ nhằm
+                           nâng
                            cao
                            công tác quản lý doanh nghiệp.</li>
                      </ul>
@@ -442,14 +448,18 @@
                      <div class="text-center">
                         <img class="img-fluid" src="./assets/img/thuong-mai-dien-tu.webp" alt="Lap-trinh-di-dong">
                      </div>
-                     <p>&nbsp;Chính thức ra mắt và gia nhập thị trường Việt Nam từ năm 2019. với mục đích tạo ra một sàn
+                     <p>&nbsp;Chính thức ra mắt và gia nhập thị trường Việt Nam từ năm 2019. với mục đích tạo ra một
+                        sàn
                         giao
-                        dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng những
+                        dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng
+                        những
                         giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn và hiệu quả nhất.</p>
                      <ul class="d-none d-lg-block list-unstyled">
-                        <li><i class="far fa-hand-point-right me-1"></i>Giao diện thiết kế đáp ứng được mọi yêu cầu từ
+                        <li><i class="far fa-hand-point-right me-1"></i>Giao diện thiết kế đáp ứng được mọi yêu cầu
+                           từ
                            khách hàng.</li>
-                        <li><i class="far fa-hand-point-right me-1"></i>Công nghệ thiết kế chuẩn SEO & Responsive tương
+                        <li><i class="far fa-hand-point-right me-1"></i>Công nghệ thiết kế chuẩn SEO & Responsive
+                           tương
                            thích với mọi loại thiết bị di động.</li>
                         <li><i class="far fa-hand-point-right me-1"></i>Chức năng bảo mật thông tin và dữ liệu khách
                            hàng an toàn tuyệt đối. Hệ thống Cloud chống
@@ -482,8 +492,10 @@
                         <h4 class="my-3">Hệ Thống Quản Lý Bán Hàng (CRM - Sales Managerment)</h4>
                      </a>
                      <p>
-                        Phần mềm hỗ trợ doanh nghiệp, cá nhân trong việc quản lý các phân đoạn bán hàng như: Nhập hàng,
-                        xuất hàng, quản lý hàng hóa, quản lí kho, quản lý đơn hàng, chăm sóc khách hàng, các dịch vụ ...
+                        Phần mềm hỗ trợ doanh nghiệp, cá nhân trong việc quản lý các phân đoạn bán hàng như: Nhập
+                        hàng,
+                        xuất hàng, quản lý hàng hóa, quản lí kho, quản lý đơn hàng, chăm sóc khách hàng, các dịch vụ
+                        ...
                      </p>
                   </div>
 
@@ -497,7 +509,8 @@
                         <h4 class="my-3">Hệ Thống Quản Lý Học Tập Trực Tuyến (E-Learning)</h4>
                      </a>
                      <p>
-                        Hệ thống quản lý học tập trực tuyến được phát triển và xây dựng bởi công ty IOT Software với đầy
+                        Hệ thống quản lý học tập trực tuyến được phát triển và xây dựng bởi công ty IOT Software với
+                        đầy
                         đủ các tính năng đa dạng như quản lý khóa học, giảng viên, học viên. Áp
                         dụng cho doanh nghiệp quản lý đào tạo trực tuyến nội bộ cho các cán
                         bộ, nhân viên mọi lúc, mọi nơi.
@@ -514,8 +527,10 @@
                         <h4 class="my-3">Hệ Thống Thương Mại Điện Tử (E-Commerce)</h4>
                      </a>
                      <p>
-                        Chính thức ra mắt và gia nhập thị trường Việt Nam từ năm 2019. với mục đích tạo ra một sàn giao
-                        dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng những
+                        Chính thức ra mắt và gia nhập thị trường Việt Nam từ năm 2019. với mục đích tạo ra một sàn
+                        giao
+                        dịch thương mại điện tử cho người Việt, kết nối người mua và người bán lại với nhau bằng
+                        những
                         giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn và hiệu quả nhất.
                      </p>
                   </div>
@@ -530,9 +545,11 @@
                         <h4 class="my-3">Hệ Thống Quản Lý Xuất Vận Chuyển Hàng Hóa</h4>
                      </a>
                      <p>
-                        Hệ thống xuất vận chuyển do công ty IOTSOFTWARE VN xây dựng, phát triển dựa trên đa nền tảng với
+                        Hệ thống xuất vận chuyển do công ty IOTSOFTWARE VN xây dựng, phát triển dựa trên đa nền tảng
+                        với
                         đầy đủ tính năng cho khách hàng, tài xế và phòng điều hành. Phần mềm quản lý xuất vận chuyển
-                        thực hiện hỗ trợ các quy trình đặt hàng, giao nhận, chuyển điều phối xe, quản lý các loại xe...
+                        thực hiện hỗ trợ các quy trình đặt hàng, giao nhận, chuyển điều phối xe, quản lý các loại
+                        xe...
                      </p>
                   </div>
 
@@ -548,7 +565,8 @@
                      </a>
                      <p>
                         Phần mềm hỗ trợ các đại lý, doanh nghiệp trong việc quản lý trả thưởng Xổ Số
-                        Kiến Thức được phát biển và xây dựng bởi công ty IOTSOFTVN với đầy đủ các tính năng
+                        Kiến Thức được phát biển và xây dựng bởi công ty IOTSOFTVN với đầy đủ các tính
+                        năng
                         đa dạng hỗ trợ việc chi trả thưởng cho cá nhân và đại lý.
                      </p>
                   </div>
@@ -580,8 +598,10 @@
                         <h4 class="my-3">Phần Mềm Booking Xuất Vận Chuyển</h4>
                      </a>
                      <p>
-                        Phần mềm Booking xuất vận chuyển do công ty IOTSOFTVN xây dựng, phát triển dựa trên đa nền
-                        tảng với đầy đủ tính năng, hỗ trợ đặt lịch, điều phối xe, quản lý việc thu gom rác nhằm tối ưu
+                        Phần mềm Booking xuất vận chuyển do công ty IOTSOFTVN xây dựng, phát triển dựa trên đa
+                        nền
+                        tảng với đầy đủ tính năng, hỗ trợ đặt lịch, điều phối xe, quản lý việc thu gom rác nhằm tối
+                        ưu
                         hóa việc vận chuyển và xử lý rác. Giúp tối ưu và giảm chi phí trong việc xử lý rác.
                      </p>
                   </div>
@@ -596,7 +616,8 @@
                      </a>
                      <p>
                         Các doanh nghiệp có số lượng khách hàng lớn nhưng
-                        việc kiểm soát công nợ lại thực hiện thủ công. Chính vì vậy sai xót rất dễ xảy ra. Phần mềm do
+                        việc kiểm soát công nợ lại thực hiện thủ công. Chính vì vậy sai xót rất dễ xảy ra. Phần mềm
+                        do
                         công ty IOT SOFTWARE VN thiết kế và xây dựng mang tính đơn giản hóa công việc xử
                         lý công nợ của nhiều khách hàng với nhiều hình thức thanh toán theo từng mô hình kinh
                         doanh của doanh nghiệp.
