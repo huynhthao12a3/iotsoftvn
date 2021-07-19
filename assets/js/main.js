@@ -87,9 +87,9 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 })
 // ----- Aos animation 
 AOS.init({
-     duration: 1500,
+     duration: 1300,
      easing: 'ease-in-out',
-     once: false,
+     once: true,
      mirror: false,
      anchorPlacement: 'top-bottom',
 })

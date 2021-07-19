@@ -53,6 +53,7 @@
 }
 /* ----- md to up ----- */
 @media (min-width:768px){
+   
    .footer-info h4{
       margin-top: -8px;
    }
