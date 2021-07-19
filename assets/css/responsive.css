@@ -37,9 +37,13 @@
    .header__introduce-logo h1{
       order: 1;
    }
+   .header__introduce-logo img {
+      filter: grayscale(0.9);
+   }
    .header__introduce-wrap h1{
       color: var(--primary-color);
    }
+   
    /*  */
    .carousel-item img{
       height: 50vh;
