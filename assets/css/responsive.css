@@ -1,5 +1,6 @@
 /* ----- 0 to < md ------ */
-@media (max-width: 767.9px){
+@media (max-width: 767px){
+   /* project */
    .project__title h2{
       font-size: 40px;
    }
@@ -8,7 +9,7 @@
       width: 20px;
    }
 
-   /*  */
+   /* carousel */
    .carousel-item h5 {
       font-size: 16px;
    letter-spacing: 2px;
@@ -19,7 +20,7 @@
 
 
 /* ----- 0 to < lg ----- */
-@media (max-width: 991.9px) {
+@media (max-width: 991px) {
    .customer-wrap{
       overflow: hidden;
       border-radius: 50%;
@@ -44,15 +45,19 @@
       color: var(--primary-color);
    }
    
-   /*  */
+   /* carousel */
    .carousel-item img{
       height: 50vh;
    }
    .carousel-item h5{
       top: 25vh;
    }
+   /* about page */
+   .about-page-banner{
+      margin-top: var(--navbar-height);
+   }
 }
-@media (min-width: 992px){
+@media (max-width: 1119px){
    
 }
 /* ----- md to up ----- */

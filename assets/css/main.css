@@ -16,7 +16,7 @@
    font-family: 'Barlow Condensed', sans-serif;
 }
 body{
-   font-size: 18px;
+   font-size: 20px;
    overflow: hidden;
 }
 html {
@@ -37,7 +37,9 @@ html {
 .lora-font{
    font-family: 'Lora';
 }
-
+.roboto-font{
+   font-family: 'Roboto';
+}
 .primary-color{
    color: var(--primary-color);
 }
@@ -212,7 +214,7 @@ html {
 }
 .nav-mobile-link:hover{
  color: #fff;
- background-color: var(--primary-color);
+ background-color: var(--active-color);
 }
 .nav-mobile--active{
    background-color: var(--active-color);
@@ -278,37 +280,23 @@ html {
    text-shadow: 1px 1px 2px #000;
 }
 /* Section */
-#about,
-#service,
-#project,
-#news,
+
 #contact{
    width:100%;
    display: flex;
    justify-content:center;
    align-items: center;
 }
+#about-last,
 #about,
+#about-info,
 #project{
-   /* background-color: #FFF; */
    background-image: url(../img/pattern1.png);
 
 }
-#service{
-   /* background-color: rgba(1, 179, 167,0.05); */
-}
+
 #project{
    background-color:#fff;
-}
-#news{
-   background-color: #DD356E;
-   height: 100vh;
-
-}
-#contact{
-   background-color: #F25B64;
-   height: 100vh;
-
 }
 
 
@@ -326,8 +314,108 @@ html {
    font-family: 'Roboto';
 
 }
+/*  */
 
+/* ========== ABOUT PAGE ========== */
+.about-page-banner {
+   background-image: url(../img/about/intro-iotsoftvn.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top ;
+   width: 100%;
+   height: 50vh;
+}
 
+.about-page-banner-tittle {
+   position: absolute;
+   top: 20vh;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #fff;
+   text-shadow: 2px 2px 4px 2px #000;
+}
+
+/* - About detail */
+.about__detail img{
+   min-height: 300px;
+}
+.about__detail-item {
+   position: relative;
+}
+
+.about__detail-btn::before {
+   left: 0;
+   bottom:-3px;
+   height: 3px;
+   width: 100%;
+}
+.about__detail-btn:hover,
+.about__detail-btn:focus{
+   color: var(--active-color);
+}
+.about__detail-list {
+   border-bottom: 3px solid #ccc;
+}
+
+.about__detail-btn {
+   border: none;
+   /* background-color: #fff; */
+}
+.about__detail-btn--active {
+   color: var(--active-color);
+   
+}
+/* About info */
+#about-info {
+   min-height: 600px;
+}
+
+/* About intro */
+.about-intro {
+   height: 50vh;
+   background-image: url(../img/about/intro-iotcity.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-attachment: fixed;
+}
+
+/* About leader */
+.leader-tittle h3::before{
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left:45%;
+   width: 10%;
+   height:3px;
+   justify-content: center;
+   background-color: var(--active-color);
+
+   
+}
+.leader-item {
+   border-top: 4px solid #D7DEE4;
+}
+.leader-item:hover{
+   transform: translateY(-30px);
+   transition: all 0.6s ease-in;
+}
+.leader-info a,
+.leader-info a:hover{
+   color: var(--active-color);
+}
+.leader-info-img {
+   border: 1px solid #D7DEE4;
+   border-radius: 50%;
+}
+.leader-info-img img {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+
+}
+/*  */
 
 /* ----- About section ----- */
 
@@ -365,34 +453,6 @@ html {
    text-align: justify;
 }
 
-/* - About detail */
-
-.about__detail-item {
-   position: relative;
-}
-
-.about__detail-btn::before {
-   left: 0;
-   bottom:-3px;
-   height: 3px;
-   width: 100%;
-}
-.about__detail-btn:hover,
-.about__detail-btn:focus{
-   color: var(--primary-color);
-}
-.about__detail-list {
-   border-bottom: 3px solid #ccc;
-}
-
-.about__detail-btn {
-   border: none;
-   /* background-color: #fff; */
-}
-.about__detail-btn--active {
-   color: var(--primary-color);
-   
-}
 
 /* ----- Service section ----- */
 
@@ -429,7 +489,7 @@ html {
 }
 #project .swiper-slide{
    border-radius: 12px;
-   min-height: 560px;
+   min-height: 570px;
    background-color: #fff;
    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
@@ -634,7 +694,7 @@ html {
 .footer-social *{
    color: #fff;
 }
-.footer-social-item {
+.footer-social-item{
    background-color: #545454;
    width: 40px;
    height: 40px;
