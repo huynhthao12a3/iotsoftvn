@@ -287,9 +287,8 @@ html {
    justify-content:center;
    align-items: center;
 }
-#about-last,
+
 #about,
-#about-info,
 #project{
    background-image: url(../img/pattern1.png);
 
@@ -335,6 +334,25 @@ html {
    letter-spacing: 2px;
    text-shadow: 2px 2px 4px #000;
 }
+/* - About head */
+
+#about-head .sologan h3{
+   background-color: var(--active-color);
+   color: #fff;
+   width: 80px;
+   height: 80px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 50%;
+   box-shadow: 1px 1px 2px  #000;
+}
+
+#about-head .sologan blockquote {
+   background-color: var(--active-color);
+   color: #fff;
+   font-size: 28px;
+}
+
 
 /* - About detail */
 .about__detail img{
@@ -360,7 +378,7 @@ html {
 
 .about__detail-btn {
    border: none;
-   /* background-color: #fff; */
+   background-color: #f8f8f8;
 }
 .about__detail-btn--active {
    color: var(--active-color);
@@ -369,6 +387,7 @@ html {
 /* About info */
 #about-info {
    min-height: 600px;
+   background-color: #F8F8F8;
 }
 
 /* About intro */
@@ -380,7 +399,10 @@ html {
    background-position: center bottom;
    background-attachment: fixed;
 }
-
+/* About last */
+#about-last {
+   background-color : #F8F8F8;
+}
 /* About leader */
 .leader-tittle h3::before{
    content: "";
