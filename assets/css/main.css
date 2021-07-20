@@ -321,7 +321,7 @@ html {
    background-image: url(../img/about/intro-iotsoftvn.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center top ;
+   background-position: center center ;
    width: 100%;
    height: 50vh;
 }
@@ -332,7 +332,8 @@ html {
    left: 50%;
    transform: translateX(-50%);
    color: #fff;
-   text-shadow: 2px 2px 4px 2px #000;
+   letter-spacing: 2px;
+   text-shadow: 2px 2px 4px #000;
 }
 
 /* - About detail */
