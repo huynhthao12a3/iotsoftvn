@@ -57,9 +57,7 @@
       margin-top: var(--navbar-height);
    }
    /* service page */
-   #service-app{
-      background-image: url(../img/service/pattern-mobile.jpg)
-   }
+   
 }
 @media (max-width: 1119px){
    

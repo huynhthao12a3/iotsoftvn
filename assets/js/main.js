@@ -81,10 +81,10 @@ function displayBlock(){
 }
 
 // ----- Carousel Bootstrap 
-var myCarousel = document.querySelector('#carouselExample')
-var carousel = new bootstrap.Carousel(myCarousel, {
-     interval: 3000,
-})
+// var myCarousel = document.querySelector('#carouselExample')
+// var carousel = new bootstrap.Carousel(myCarousel, {
+//      interval: 3000,
+// })
 // ----- Aos animation 
 AOS.init({
      duration: 1300,
@@ -211,7 +211,6 @@ const customerSwiper = new Swiper('.customer__slide', {
      grabCursor: false,
 
      slidesPerView: 1,
-     
 
 });
 
