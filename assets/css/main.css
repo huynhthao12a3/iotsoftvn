@@ -205,6 +205,7 @@ html {
    top: 70px;
    left: 0;
    display: none;
+   padding-bottom: var(--navbar-height);
 }
 .nav-mobile-item i {
    font-size: 16px;
@@ -220,6 +221,15 @@ html {
    background-color: var(--active-color);
    color: #fff;
 }
+.nav-mobile-footer img{
+   border: 1px solid var(--active-color);
+   
+}
+.nav-mobile-footer a,
+.nav-mobile-footer a:hover{
+   color: var(--active-color);
+}
+
 @keyframes navMobileOpen {
    from{
       transform: translateX(-400px);
@@ -241,6 +251,7 @@ html {
 .transform-180{
    transform: rotate(180deg);
 }
+
 
 
 
@@ -317,7 +328,7 @@ html {
 
 /* ========== ABOUT PAGE ========== */
 .about-page-banner {
-   background-image: url(../img/about/intro-iotsoftvn.jpg);
+   background-image: url(../img/about/intro-iotsoftvn.webp);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center ;
@@ -394,7 +405,7 @@ html {
 /* About intro */
 .about-intro {
    height: 50vh;
-   background-image: url(../img/about/intro-iotcity.png);
+   background-image: url(../img/about/intro-iotcity.webp);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center bottom;

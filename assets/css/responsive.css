@@ -42,7 +42,7 @@
       filter: grayscale(0.9);
    }
    .header__introduce-wrap h1{
-      color: var(--primary-color);
+      color: var(--active-color);
    }
    
    /* carousel */

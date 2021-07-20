@@ -65,19 +65,19 @@ var navMobile = document.getElementById('nav-mobile');
 var navMobileIcon = document.getElementById('header__introduce-btn');
 function openMenu(){
      if(counterClick %2 === 0){
-          navMobile.style.animation = " navMobileOpen 0.6s ease-out";
+          navMobile.style.animation = " navMobileOpen 0.6s ease-in";
           navMobileIcon.classList.toggle('transform-180');
           displayBlock();
      }
      else{
-          navMobile.style.animation = " navMobileClose 0.6s ease-in";
+          navMobile.style.animation = " navMobileClose 0.7s ease-in";
           navMobileIcon.classList.toggle('transform-180');
           setTimeout(displayBlock,600);
      }
      counterClick++;
 }
 function displayBlock(){
-     navMobile.classList.toggle("d-block");
+     navMobile.classList.toggle("d-flex");
 }
 
 // ----- Carousel Bootstrap 
