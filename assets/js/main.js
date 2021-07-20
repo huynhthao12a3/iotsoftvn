@@ -211,6 +211,7 @@ const customerSwiper = new Swiper('.customer__slide', {
      grabCursor: false,
 
      slidesPerView: 1,
+     
 
 });
 
