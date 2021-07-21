@@ -3,8 +3,8 @@
 :root{
    /* #01B3A7  */
    --primary-color: #262626;
-   --foreign-color: #FED152;
-   --active-color: #01B3A7;
+   --foreign-color: #0F78BF;
+   --active-color: #0F78BF;
    --footer-text-color: #d7d7d9;
    --animate-delay: 0.5s;
    --navbar-height: 70px;
@@ -161,7 +161,7 @@ html {
    transition: color 0.5s, transform 0.3s ease-out;
 }
 
-
+.about__detail-btn::before,
 .about__detail-btn:hover::before,
 .about__detail-btn:focus::before,
 .header__navbar-link:hover::before,
@@ -173,7 +173,7 @@ html {
 /*  */
 
 .header__navbar-link-icon {
-   border:1px solid #FED152;
+   border:1px solid var(--foreign-color);
 }
 
 
@@ -205,7 +205,7 @@ html {
    top: 70px;
    left: 0;
    display: none;
-   padding-bottom: var(--navbar-height);
+   padding-bottom: calc(var(--navbar-height) + 60px);
 }
 .nav-mobile-item i {
    font-size: 16px;
@@ -301,7 +301,7 @@ html {
 #service-app,
 #about,
 #project{
-   background-image: url(../img/pattern1.png);
+   background-image: url(../img/pattern1.webp);
 
 }
 
@@ -455,7 +455,7 @@ html {
 /* ========== SERVICE PAGE ========== */
 /* Service banner */
 .service-page-banner {
-   background-image: url(../img/service/service-banner.jpg);
+   background-image: url(../img/service/service-banner.webp);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center ;
