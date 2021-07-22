@@ -35,13 +35,13 @@
    .header__introduce-logo a{
       order: 2;
    }
-   .header__introduce-logo h1{
+   .header__introduce-logo h2{
       order: 1;
    }
    .header__introduce-logo img {
       filter: grayscale(0.9);
    }
-   .header__introduce-wrap h1{
+   .header__introduce-wrap h2{
       color: var(--active-color);
    }
    
@@ -53,7 +53,9 @@
       top: 25vh;
    }
    /* about page */
-   .about-page-banner{
+   .about-page-banner,
+   .service-page-banner,
+   .news-page-banner{
       margin-top: var(--navbar-height);
    }
    /* service page */
