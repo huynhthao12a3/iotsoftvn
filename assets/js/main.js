@@ -80,11 +80,7 @@ function displayBlock(){
      navMobile.classList.toggle("d-flex");
 }
 
-// ----- Carousel Bootstrap 
-// var myCarousel = document.querySelector('#carouselExample')
-// var carousel = new bootstrap.Carousel(myCarousel, {
-//      interval: 3000,
-// })
+
 // ----- Aos animation 
 AOS.init({
      duration: 1300,
@@ -94,29 +90,7 @@ AOS.init({
      anchorPlacement: 'top-bottom',
 })
 
-// ----- Highlight scroll to section
-// const sections = document.querySelectorAll('section');
-// const navLi = document.querySelectorAll('nav .header__navbar-list-item li a');
 
-// const heightHeader = $('#home').outerHeight();
-// const heightHeaderNavFix = $('.header__navbar').outerHeight();
-
-// window.addEventListener('scroll', () => {
-//      let current = '';
-
-//      sections.forEach(section => {
-//           const sectionTop = section.offsetTop;
-//           if (pageYOffset >= (sectionTop - heightHeaderNavFix)) {
-//                current = section.getAttribute('id');
-//           }
-//      })
-//      navLi.forEach(li => {
-//           li.classList.remove('nav-active');
-//           if (li.classList.contains(current)) {
-//                li.classList.add('nav-active');
-//           }
-//      })
-// })
 
 // ----- About detail Click
 function ButtonInfo() 
@@ -220,29 +194,3 @@ $('.project-counting').countUp({
      delay: 10,
      time:  1600,       
 });
-
-
-// window.addEventListener('scroll', ()=>{
-//      let projectSection = document.getElementById('project');
-//      if(window.pageYOffset >= projectSection.offsetTop){
-//           $('.project-counting').each(function(){
-//                var $this = $(this),
-//                countTo = $this.attr('data')
-//                $({countNum: $this.text()}).animate({
-//                     countNum: countTo
-//                },
-//                {
-//                     duration: 2000,
-//                     easing: 'linear',
-//                     step: function(){
-//                          $this.text(Math.floor(this.countNum))
-//                     },
-//                     complete: function(){
-//                          $this.text(this.countNum + '+')
-//                     }
-                    
-//                }
-//                )
-//           })
-//      }
-// })

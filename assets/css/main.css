@@ -488,6 +488,21 @@ html {
    max-height: 90px;
 }
 
+/* Slide */
+/* #service-slide .swiper-container .swiper-slide  {
+   height: 800px;
+} */
+#service-slide .swiper-pagination-bullet {
+   margin-right: 20px;
+   width: 14px;
+   height: 14px;
+   background: #ccc;
+   opacity: 1;
+}
+#service-slide .swiper-pagination-bullet.swiper-pagination-bullet-active{
+   background-color: var(--primary-color);
+}
+
 /*  */
 /* ----- About section ----- */
 
@@ -561,7 +576,7 @@ html {
 }
 #project .swiper-slide{
    border-radius: 12px;
-   min-height: 570px;
+   min-height: 630px;
    background-color: #fff;
    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
@@ -570,7 +585,7 @@ html {
    letter-spacing: 2px;
 }
 #project .swiper-slide h4:hover{
-   color: var(--primary-color);
+   color: var(--active-color);
 }
 #project .swiper-slide p{
    text-align: justify;
@@ -618,13 +633,13 @@ html {
 .bubble:nth-child(1){
    width:40px;
    height:40px;
-   left:10%;
+   left:12%;
    animation-duration:6s;
 }
 .bubble:nth-child(2){
    width:20px;
    height:20px;
-   left:20%;
+   left:18%;
    animation-duration:5s;
    animation-delay:1s;
 }
@@ -638,7 +653,7 @@ html {
 .bubble:nth-child(4){
    width:40px;
    height:40px;
-   left:50%;
+   left:45%;
    animation-duration:11s;
    animation-delay:0s;
 }
@@ -684,7 +699,75 @@ html {
    animation-duration:10s;
    animation-delay:4s;
 }
-
+.bubble:nth-child(11){
+   width:50px;
+   height:50px;
+   left:28%;
+   animation-duration:6s;
+}
+.bubble:nth-child(12){
+   width:30px;
+   height:30px;
+   left:20%;
+   animation-duration:5s;
+   animation-delay:1s;
+}
+.bubble:nth-child(13){
+   width:45px;
+   height:45px;
+   left:59%;
+   animation-duration:7s;
+   animation-delay:2s;
+}
+.bubble:nth-child(14){
+   width:48px;
+   height:48px;
+   left:63%;
+   animation-duration:12s;
+   animation-delay:1s;
+}
+.bubble:nth-child(15){
+   width:54px;
+   height:54px;
+   left:52%;
+   animation-duration:6s;
+   animation-delay:1s;
+}
+.bubble:nth-child(16){
+   width:45px;
+   height:45px;
+   left:18%;
+   animation-duration:8s;
+   animation-delay:3s;
+}
+.bubble:nth-child(17){
+   width:36px;
+   height:36px;
+   left:78%;
+   animation-duration:11s;
+   animation-delay:2s;
+}
+.bubble:nth-child(18){
+   width:35px;
+   height:35px;
+   left:86%;
+   animation-duration:5s;
+   animation-delay:1s;
+}
+.bubble:nth-child(19){
+   width:25px;
+   height:25px;
+   left:74%;
+   animation-duration:3s;
+   animation-delay:2s;
+}
+.bubble:nth-child(20){
+   width:64px;
+   height:64px;
+   left:28%;
+   animation-duration:10s;
+   animation-delay:3s;
+}
 @keyframes rise{
    0%{
       top:-100px;
@@ -697,7 +780,7 @@ html {
       transform:translate(200px);
    }
    100%{
-      top:1600px;
+      top:1800px;
       transform:translateX(0px);
    }
 }
