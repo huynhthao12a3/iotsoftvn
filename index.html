@@ -53,20 +53,22 @@
    <header id="header__introduce" class="fixed-top header__introduce shadow-lg">
       <!-- Header introduce -->
       <div class="container h-100">
-         <div class="header__introduce-wrap h-100 p-2 d-flex">
-            <div class=" d-flex d-lg-none col-md-4 col-3 align-items-center">
-               <div id="header__introduce-btn" class="header__introduce-btn" onclick="openMenu()">
+         <div class="header__introduce-wrap h-100 p-2 d-flex justify-content-between">
+            <div class=" d-flex d-lg-none align-items-center">
+               <div id="header__introduce-btn" class="header__introduce-btn p-2" onclick="openMenu()">
                   <i class="fas fa-bars p-2"></i>
                </div>
             </div>
-            <div class="header__introduce-logo  d-flex col-lg-8 col-md-8 col-9">
 
+            <h2 class="d-block d-lg-none fs-2">IOT SOFTWARE VN</h2>
+
+            <div class="header__introduce-logo  d-flex">
                <a class="d-inline-block" href="#">
                   <img src="./assets/img/logo-footer.webp" alt="logo-iot-software">
                </a>
-               <h2 class="d-inline-block m-0 ps-4 ps-md-4 ps-lg-3 fs-2">IOT
-                  SOFTWARE VN</h2>
+               <h2 class="d-none d-lg-inline-block m-0 ps-lg-3  fs-2">IOT SOFTWARE VN</h2>
             </div>
+
             <div class="header__introduce-info d-none d-lg-flex justify-content-between flex-wrap col-lg-4  ">
                <div class="header__introduce-time text-light align-self-center  d-flex ">
                   <i class="far fa-clock pt-1 me-2"></i>
@@ -144,7 +146,7 @@
    <!-- - Navbar Tablet & Mobile < 992px  -->
    <nav id="nav-mobile" class=" flex-column d-lg-none  bg-light position-fixed">
 
-      <div class="nav-mobile-social py-4 d-flex flex-row justify-content-center">
+      <div class="nav-mobile-social py-3 py-md-4 d-flex flex-row justify-content-center">
          <a href="#">
             <i class="fab fa-google text-secondary m-2 fs-3"></i>
          </a>
@@ -160,23 +162,23 @@
       </div>
       <ul class="nav-mobile-list list-unstyled ">
          <li class="nav-mobile-item">
-            <a href="./index.html" class="nav-mobile-link text-decoration-none d-block p-4  nav-mobile--active ">
+            <a href="./index.html" class="nav-mobile-link text-decoration-none d-block p-3 p-md-4  nav-mobile--active ">
                <i class="fas fa-home-lg-alt me-3"></i>Trang Chủ</a>
          </li>
          <li class="nav-mobile-item">
-            <a href="./about.html" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+            <a href="./about.html" class="nav-mobile-link text-decoration-none d-block p-3 p-md-4  "><i
                   class="fas fa-question-square me-3"></i>Giới Thiệu</a>
          </li>
          <li class="nav-mobile-item">
-            <a href="./service.html" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+            <a href="./service.html" class="nav-mobile-link text-decoration-none d-block p-3 p-md-4  "><i
                   class="fas fa-handshake me-3"></i>Dịch Vụ</a>
          </li>
          <li class="nav-mobile-item">
-            <a href="./news.html" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+            <a href="./news.html" class="nav-mobile-link text-decoration-none d-block p-3 p-md-4  "><i
                   class="fas fa-newspaper me-3"></i>Tin Tức</a>
          </li>
          <li class="nav-mobile-item">
-            <a href="./contact.html" class="nav-mobile-link text-decoration-none d-block p-4  "><i
+            <a href="./contact.html" class="nav-mobile-link text-decoration-none d-block p-3 p-md-4  "><i
                   class="fas fa-id-card me-3"></i>Liên Hệ</a>
          </li>
       </ul>

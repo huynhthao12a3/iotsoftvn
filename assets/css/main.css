@@ -189,7 +189,7 @@ html {
 /* Navbar mobile */
 .header__introduce-btn{
    transition: transform 0.4s linear;
-
+   opacity: 0.5;
 }
 .header__introduce-btn:hover{
    cursor: pointer;
