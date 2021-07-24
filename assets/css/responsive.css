@@ -47,7 +47,8 @@
    /* about page */
    .about-page-banner,
    .service-page-banner,
-   .news-page-banner{
+   .news-page-banner,
+   .contact-page-banner{
       margin-top: var(--navbar-height);
    }
    /* service page */

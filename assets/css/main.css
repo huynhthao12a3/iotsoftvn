@@ -298,6 +298,8 @@ html {
    justify-content:center;
    align-items: center;
 }
+
+#gg-map,
 #service-app,
 #about,
 #project{
@@ -338,7 +340,8 @@ html {
 
 .about-page-banner-tittle,
 .service-page-banner-tittle,
-.news-page-banner-tittle {
+.news-page-banner-tittle,
+.contact-page-banner-tittle {
    position: absolute;
    top: 25vh;
    left: 50%;
@@ -558,12 +561,41 @@ html {
    background-color: #D7DEE4;
 }
 /*  */
+
+/* ========== CONTACT PAGE ========== */
+.contact-page-banner {
+   background-image: url(../img/contact/contact-iotsoftvn.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center ;
+   width: 100%;
+   height: 50vh;
+}
+/* 
+#gg-map {
+   background-image: url(../img/contact/contact-decor.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+} */
+.address-item{
+   border: 1px solid #ccc;
+}
+
+.address h2 span {
+   color: var(--active-color);
+}
+
+#gg-map .map {
+   min-height: 500px;
+}
+/*  */
 /* ----- About section ----- */
 
 /* - About title */
 .about__title h2,
 .service__title h2,
-.project__title h2{
+.project__title h3{
    font-size: 50px;
    font-family: 'Festive';
    color: var(--foreign-color);
@@ -571,8 +603,8 @@ html {
 
 .about__title h2::after,
 .service__title h2::after,
-.project__title h2::before,
-.project__title h2::after{
+.project__title h3::before,
+.project__title h3::after{
    content: "";
    width: 100px;
    height: 1px;
